@@ -1,7 +1,7 @@
 #include <Common/path.h>
 #include <Common/IniFile.h>
 #include <Common/StdString.h>
-#include <Project64-core/N64System/Enhancement/EnhancementFile.h>
+#include <Swervito64-core/N64System/Enhancement/EnhancementFile.h>
 #include <algorithm>
 #include <set>
 #include <windows.h>
@@ -226,9 +226,9 @@ void JoinFile(const char * Directory, const char * Target)
     }
     if (strcmp(CPath(Target).GetExtension().c_str(), "cht") == 0)
     {
-        stdstr_f LineData = stdstr_f("// Project64 official cheat database\r\n");
+        stdstr_f LineData = stdstr_f("// Swervito64 official cheat database\r\n");
         TargetIniFile.Write(LineData.c_str(), (int)LineData.length());
-        LineData = stdstr_f("// Not for use with Project64 v1.6 or lower\r\n");
+        LineData = stdstr_f("// Not for use with Swervito64 v1.6 or lower\r\n");
         TargetIniFile.Write(LineData.c_str(), (int)LineData.length());
         LineData = stdstr_f("// ----------------------------------------------------\r\n\r\n");
         TargetIniFile.Write(LineData.c_str(), (int)LineData.length());

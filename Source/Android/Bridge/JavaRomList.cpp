@@ -1,6 +1,6 @@
 #include "JavaRomList.h"
 #include "JavaBridge.h"
-#include <Project64-core/Multilanguage.h>
+#include <Swervito64-core/Multilanguage.h>
 
 #ifdef ANDROID
 extern JavaBridge * g_JavaBridge;

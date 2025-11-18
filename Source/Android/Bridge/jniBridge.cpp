@@ -12,13 +12,13 @@
 #include <Common/StdString.h>
 #include <Common/Thread.h>
 #include <Common/Trace.h>
-#include <Project64-core/AppInit.h>
-#include <Project64-core/N64System/N64System.h>
-#include <Project64-core/N64System/SystemGlobals.h>
-#include <Project64-core/Settings.h>
-#include <Project64-core/Settings/SettingType/SettingsType-Application.h>
-#include <Project64-core/TraceModulesProject64.h>
-#include <Project64-core/Version.h>
+#include <Swervito64-core/AppInit.h>
+#include <Swervito64-core/N64System/N64System.h>
+#include <Swervito64-core/N64System/SystemGlobals.h>
+#include <Swervito64-core/Settings.h>
+#include <Swervito64-core/Settings/SettingType/SettingsType-Application.h>
+#include <Swervito64-core/TraceModulesSwervito64.h>
+#include <Swervito64-core/Version.h>
 
 #ifdef _WIN32
 #define EXPORT extern "C" __declspec(dllexport)
@@ -209,16 +209,16 @@ void GameCpuRunning(void * /*NotUsed*/)
     WriteTrace(TraceUserInterface, TraceDebug, "Done");
 }
 
-EXPORT jboolean CALL Java_emu_project64_jni_NativeExports_appInit(JNIEnv * env, jclass cls, jstring BaseDir)
+EXPORT jboolean CALL Java_emu_Swervito64_jni_NativeExports_appInit(JNIEnv * env, jclass cls, jstring BaseDir)
 {
-    __android_log_print(ANDROID_LOG_INFO, "Project64", "    ____               _           __  _____ __ __");
-    __android_log_print(ANDROID_LOG_INFO, "Project64", "   / __ \\_________    (_)__  _____/ /_/ ___// // /");
-    __android_log_print(ANDROID_LOG_INFO, "Project64", "  / /_/ / ___/ __ \\  / / _ \\/ ___/ __/ __ \\/ // /_");
-    __android_log_print(ANDROID_LOG_INFO, "Project64", " / ____/ /  / /_/ / / /  __/ /__/ /_/ /_/ /__  __/");
-    __android_log_print(ANDROID_LOG_INFO, "Project64", "/_/   /_/   \\____/_/ /\\___/\\___/\\__/\\____/  /_/");
-    __android_log_print(ANDROID_LOG_INFO, "Project64", "                /___/");
-    __android_log_print(ANDROID_LOG_INFO, "Project64", "https://www.pj64-emu.com/");
-    __android_log_print(ANDROID_LOG_INFO, "Project64", "%s", stdstr_f("%s Version %s", VER_FILE_DESCRIPTION_STR, VER_FILE_VERSION_STR).c_str());
+    __android_log_print(ANDROID_LOG_INFO, "Swervito64", "    ____               _           __  _____ __ __");
+    __android_log_print(ANDROID_LOG_INFO, "Swervito64", "   / __ \\_________    (_)__  _____/ /_/ ___// // /");
+    __android_log_print(ANDROID_LOG_INFO, "Swervito64", "  / /_/ / ___/ __ \\  / / _ \\/ ___/ __/ __ \\/ // /_");
+    __android_log_print(ANDROID_LOG_INFO, "Swervito64", " / ____/ /  / /_/ / / /  __/ /__/ /_/ /_/ /__  __/");
+    __android_log_print(ANDROID_LOG_INFO, "Swervito64", "/_/   /_/   \\____/_/ /\\___/\\___/\\__/\\____/  /_/");
+    __android_log_print(ANDROID_LOG_INFO, "Swervito64", "                /___/");
+    __android_log_print(ANDROID_LOG_INFO, "Swervito64", "https://www.pj64-emu.com/");
+    __android_log_print(ANDROID_LOG_INFO, "Swervito64", "%s", stdstr_f("%s Version %s", VER_FILE_DESCRIPTION_STR, VER_FILE_VERSION_STR).c_str());
 
     if (g_Logger == NULL)
     {
@@ -234,7 +234,7 @@ EXPORT jboolean CALL Java_emu_project64_jni_NativeExports_appInit(JNIEnv * env, 
 
     const char * baseDir = env->GetStringUTFChars(BaseDir, 0);
     bool res = AppInit(&Notify(), baseDir, 0, NULL);
-    __android_log_print(ANDROID_LOG_INFO, "Project64", "baseDir: %s", baseDir);
+    __android_log_print(ANDROID_LOG_INFO, "Swervito64", "baseDir: %s", baseDir);
     env->ReleaseStringUTFChars(BaseDir, baseDir);
     if (res)
     {
@@ -251,16 +251,16 @@ EXPORT jboolean CALL Java_emu_project64_jni_NativeExports_appInit(JNIEnv * env, 
     {
         AppCleanup();
     }
-    __android_log_print(ANDROID_LOG_INFO, "Project64", "");
+    __android_log_print(ANDROID_LOG_INFO, "Swervito64", "");
     return res;
 }
 
-EXPORT jstring CALL Java_emu_project64_jni_NativeExports_appVersion(JNIEnv * env, jclass cls)
+EXPORT jstring CALL Java_emu_Swervito64_jni_NativeExports_appVersion(JNIEnv * env, jclass cls)
 {
     return env->NewStringUTF(VER_FILE_VERSION_STR);
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_SettingsSaveBool(JNIEnv * env, jclass cls, jstring Type, jboolean Value)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_SettingsSaveBool(JNIEnv * env, jclass cls, jstring Type, jboolean Value)
 {
     const char * szType = env->GetStringUTFChars(Type, 0);
     WriteTrace(TraceUserInterface, TraceDebug, "Saving %s value: %s", szType, Value ? "true" : "false");
@@ -273,7 +273,7 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_SettingsSaveBool(JNIEnv * 
     WriteTrace(TraceUserInterface, TraceDebug, "Saved");
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_SettingsSaveDword(JNIEnv * env, jclass cls, jstring Type, int Value)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_SettingsSaveDword(JNIEnv * env, jclass cls, jstring Type, int Value)
 {
     const char * szType = env->GetStringUTFChars(Type, 0);
     WriteTrace(TraceUserInterface, TraceDebug, "Saving %s value: 0x%X", szType, Value);
@@ -287,7 +287,7 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_SettingsSaveDword(JNIEnv *
     env->ReleaseStringUTFChars(Type, szType);
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_SettingsSaveString(JNIEnv * env, jclass cls, jstring Type, jstring Buffer)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_SettingsSaveString(JNIEnv * env, jclass cls, jstring Type, jstring Buffer)
 {
     const char * szBuffer = env->GetStringUTFChars(Buffer, 0);
     const char * szType = env->GetStringUTFChars(Type, 0);
@@ -303,7 +303,7 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_SettingsSaveString(JNIEnv 
     WriteTrace(TraceUserInterface, TraceDebug, "Saved");
 }
 
-EXPORT jboolean CALL Java_emu_project64_jni_NativeExports_SettingsLoadBool(JNIEnv * env, jclass cls, jstring Type)
+EXPORT jboolean CALL Java_emu_Swervito64_jni_NativeExports_SettingsLoadBool(JNIEnv * env, jclass cls, jstring Type)
 {
     const char * szType = env->GetStringUTFChars(Type, 0);
     SettingID Id = JniBridegSettings->TranslateSettingID(szType);
@@ -315,7 +315,7 @@ EXPORT jboolean CALL Java_emu_project64_jni_NativeExports_SettingsLoadBool(JNIEn
     return false;
 }
 
-EXPORT jint CALL Java_emu_project64_jni_NativeExports_SettingsLoadDword(JNIEnv * env, jclass cls, jstring Type)
+EXPORT jint CALL Java_emu_Swervito64_jni_NativeExports_SettingsLoadDword(JNIEnv * env, jclass cls, jstring Type)
 {
     const char * szType = env->GetStringUTFChars(Type, 0);
     SettingID Id = JniBridegSettings->TranslateSettingID(szType);
@@ -327,7 +327,7 @@ EXPORT jint CALL Java_emu_project64_jni_NativeExports_SettingsLoadDword(JNIEnv *
     return 0;
 }
 
-EXPORT jstring CALL Java_emu_project64_jni_NativeExports_SettingsLoadString(JNIEnv * env, jclass cls, jstring Type)
+EXPORT jstring CALL Java_emu_Swervito64_jni_NativeExports_SettingsLoadString(JNIEnv * env, jclass cls, jstring Type)
 {
     const char * szType = env->GetStringUTFChars(Type, 0);
     SettingID Id = JniBridegSettings->TranslateSettingID(szType);
@@ -339,7 +339,7 @@ EXPORT jstring CALL Java_emu_project64_jni_NativeExports_SettingsLoadString(JNIE
     return env->NewStringUTF("");
 }
 
-EXPORT jstring CALL Java_emu_project64_jni_NativeExports_SettingsLoadStringIndex(JNIEnv * env, jclass cls, jstring Type, int32_t Index)
+EXPORT jstring CALL Java_emu_Swervito64_jni_NativeExports_SettingsLoadStringIndex(JNIEnv * env, jclass cls, jstring Type, int32_t Index)
 {
     const char * szType = env->GetStringUTFChars(Type, 0);
     SettingID Id = JniBridegSettings->TranslateSettingID(szType);
@@ -351,7 +351,7 @@ EXPORT jstring CALL Java_emu_project64_jni_NativeExports_SettingsLoadStringIndex
     return env->NewStringUTF("");
 }
 
-EXPORT jboolean CALL Java_emu_project64_jni_NativeExports_IsSettingSet(JNIEnv * env, jclass cls, jstring Type)
+EXPORT jboolean CALL Java_emu_Swervito64_jni_NativeExports_IsSettingSet(JNIEnv * env, jclass cls, jstring Type)
 {
     const char * szType = env->GetStringUTFChars(Type, 0);
     SettingID Id = JniBridegSettings->TranslateSettingID(szType);
@@ -363,7 +363,7 @@ EXPORT jboolean CALL Java_emu_project64_jni_NativeExports_IsSettingSet(JNIEnv * 
     return false;
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_LoadRomList(JNIEnv * env, jclass cls)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_LoadRomList(JNIEnv * env, jclass cls)
 {
     WriteTrace(TraceUserInterface, TraceDebug, "Start");
     if (g_JavaRomList == NULL)
@@ -375,7 +375,7 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_LoadRomList(JNIEnv * env, 
     WriteTrace(TraceUserInterface, TraceDebug, "Done");
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_LoadGame(JNIEnv * env, jclass cls, jstring FileLoc)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_LoadGame(JNIEnv * env, jclass cls, jstring FileLoc)
 {
     const char * fileLoc = env->GetStringUTFChars(FileLoc, 0);
     WriteTrace(TraceUserInterface, TraceDebug, "FileLoc: %s", fileLoc);
@@ -384,14 +384,14 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_LoadGame(JNIEnv * env, jcl
     WriteTrace(TraceUserInterface, TraceDebug, "Image loaded");
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_StartGame(JNIEnv * env, jclass cls, jobject activity, jobject GLThread)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_StartGame(JNIEnv * env, jclass cls, jobject activity, jobject GLThread)
 {
     g_Activity = env->NewGlobalRef(activity);
     g_GLThread = env->NewGlobalRef(GLThread);
     CN64System::RunLoadedImage();
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_RefreshRomDir(JNIEnv * env, jclass cls, jstring RomDir, jboolean Recursive)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_RefreshRomDir(JNIEnv * env, jclass cls, jstring RomDir, jboolean Recursive)
 {
     const char * romDir = env->GetStringUTFChars(RomDir, 0);
     WriteTrace(TraceUserInterface, TraceDebug, "romDir = %s Recursive = %s", romDir, Recursive ? "true" : "false");
@@ -408,7 +408,7 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_RefreshRomDir(JNIEnv * env
     WriteTrace(TraceUserInterface, TraceDebug, "Done");
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_ExternalEvent(JNIEnv * env, jclass cls, int Type)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_ExternalEvent(JNIEnv * env, jclass cls, int Type)
 {
     WriteTrace(TraceUserInterface, TraceDebug, "Start (Type: %d)", Type);
     if (g_BaseSystem)
@@ -422,14 +422,14 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_ExternalEvent(JNIEnv * env
     WriteTrace(TraceUserInterface, TraceDebug, "Done");
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_ResetApplicationSettings(JNIEnv * env, jclass cls)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_ResetApplicationSettings(JNIEnv * env, jclass cls)
 {
     WriteTrace(TraceUserInterface, TraceDebug, "Start");
     CSettingTypeApplication::ResetAll();
     WriteTrace(TraceUserInterface, TraceDebug, "Done");
 }
 
-EXPORT jbyteArray CALL Java_emu_project64_jni_NativeExports_GetString(JNIEnv * env, jclass cls, int StringID)
+EXPORT jbyteArray CALL Java_emu_Swervito64_jni_NativeExports_GetString(JNIEnv * env, jclass cls, int StringID)
 {
     WriteTrace(TraceUserInterface, TraceDebug, "Start (StringID: %d)", StringID);
     jbyteArray result = NULL;
@@ -450,7 +450,7 @@ EXPORT jbyteArray CALL Java_emu_project64_jni_NativeExports_GetString(JNIEnv * e
     return result;
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_SetSpeed(JNIEnv * env, jclass cls, int Speed)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_SetSpeed(JNIEnv * env, jclass cls, int Speed)
 {
     WriteTrace(TraceUserInterface, TraceDebug, "Start (Speed: %d)", Speed);
     if (g_BaseSystem)
@@ -460,7 +460,7 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_SetSpeed(JNIEnv * env, jcl
     WriteTrace(TraceUserInterface, TraceDebug, "Done");
 }
 
-EXPORT int CALL Java_emu_project64_jni_NativeExports_GetSpeed(JNIEnv * env, jclass cls)
+EXPORT int CALL Java_emu_Swervito64_jni_NativeExports_GetSpeed(JNIEnv * env, jclass cls)
 {
     int speed = 0;
     WriteTrace(TraceUserInterface, TraceDebug, "Start");
@@ -472,7 +472,7 @@ EXPORT int CALL Java_emu_project64_jni_NativeExports_GetSpeed(JNIEnv * env, jcla
     return speed;
 }
 
-EXPORT int CALL Java_emu_project64_jni_NativeExports_GetBaseSpeed(JNIEnv * env, jclass cls)
+EXPORT int CALL Java_emu_Swervito64_jni_NativeExports_GetBaseSpeed(JNIEnv * env, jclass cls)
 {
     int speed = 0;
     WriteTrace(TraceUserInterface, TraceDebug, "Start");
@@ -484,7 +484,7 @@ EXPORT int CALL Java_emu_project64_jni_NativeExports_GetBaseSpeed(JNIEnv * env, 
     return speed;
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_onSurfaceCreated(JNIEnv * env, jclass cls)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_onSurfaceCreated(JNIEnv * env, jclass cls)
 {
     WriteTrace(TraceUserInterface, TraceDebug, "Start");
     if (g_BaseSystem != NULL && g_BaseSystem->GetPlugins() != NULL && g_BaseSystem->GetPlugins()->Gfx() != NULL)
@@ -506,7 +506,7 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_onSurfaceCreated(JNIEnv * 
     WriteTrace(TraceUserInterface, TraceDebug, "Done");
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_onSurfaceChanged(JNIEnv * env, jclass cls, jint width, jint height)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_onSurfaceChanged(JNIEnv * env, jclass cls, jint width, jint height)
 {
     WriteTrace(TraceUserInterface, TraceDebug, "Start");
     if (g_BaseSystem != NULL && g_BaseSystem->GetPlugins() != NULL && g_BaseSystem->GetPlugins()->Gfx() != NULL)
@@ -528,7 +528,7 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_onSurfaceChanged(JNIEnv * 
     WriteTrace(TraceUserInterface, TraceDebug, "Done");
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_StopEmulation(JNIEnv * env, jclass cls)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_StopEmulation(JNIEnv * env, jclass cls)
 {
     WriteTrace(TraceUserInterface, TraceDebug, "Start");
     if (g_BaseSystem)
@@ -538,7 +538,7 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_StopEmulation(JNIEnv * env
     WriteTrace(TraceUserInterface, TraceDebug, "Done");
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_StartEmulation(JNIEnv * env, jclass cls)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_StartEmulation(JNIEnv * env, jclass cls)
 {
     WriteTrace(TraceUserInterface, TraceDebug, "Start");
     if (g_BaseSystem)
@@ -548,7 +548,7 @@ EXPORT void CALL Java_emu_project64_jni_NativeExports_StartEmulation(JNIEnv * en
     WriteTrace(TraceUserInterface, TraceDebug, "Done");
 }
 
-EXPORT void CALL Java_emu_project64_jni_NativeExports_CloseSystem(JNIEnv * env, jclass cls)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeExports_CloseSystem(JNIEnv * env, jclass cls)
 {
     WriteTrace(TraceUserInterface, TraceDebug, "Start");
     g_BaseSystem->EndEmulation();

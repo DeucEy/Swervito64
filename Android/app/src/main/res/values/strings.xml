@@ -60,10 +60,10 @@
     <string name="RecordRecompilerAsm_title">Record Recompiler Asm</string>
     <string name="RecordRecompilerAsm_summary">Create a log file of the asm generated</string>
     <string name="logging">Logging</string>
-    <string name="project64core">Project64 Core</string>
+    <string name="Swervito64core">Swervito64 Core</string>
     <string name="AudioPlugin">Audio Plugin</string>
     <string name="VideoPlugin">Video Plugin</string>
-    <string name="logging_project64core">Logging - Project64 Core</string>
+    <string name="logging_Swervito64core">Logging - Swervito64 Core</string>
     <string name="logging_Audio">Logging - Audio</string>
     <string name="logging_Video">Logging - Video</string>
     <string name="TraceError">Error</string>
@@ -199,11 +199,11 @@
     <string name="assetExtractor_failed">Error extracting app data.\nPlease unplug USB cable, reboot device, and re-launch app.\nFor help, please visit %1$s.</string>
     <string name="assetExtractor_failed_permissions">This app cannot proceed without these permissions</string>
     <string name="assetExtractor_permissions_title">Permissions</string>
-    <string name="assetExtractor_permissions_rationale">Project64 needs to be able to: \nRead your storage to read game files, save states, and configuration.\nWrite to your storage to write configuration and save data.</string>
+    <string name="assetExtractor_permissions_rationale">Swervito64 needs to be able to: \nRead your storage to read game files, save states, and configuration.\nWrite to your storage to write configuration and save data.</string>
 
     <!-- Review -->
-    <string name="review_title">Please rate Project64 5 stars</string>
-    <string name="review_decription">Please rate Project64 5 stars if you have enjoyed it. Your support and feedback helps makes Project64 better.</string>
+    <string name="review_title">Please rate Swervito64 5 stars</string>
+    <string name="review_decription">Please rate Swervito64 5 stars if you have enjoyed it. Your support and feedback helps makes Swervito64 better.</string>
     <string name="review_cancel">Don\'t Rate</string>
     <string name="review_ok">Rate 5 Starts</string>
 

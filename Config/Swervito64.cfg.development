@@ -1,0 +1,38 @@
+﻿[Settings]
+7zipCache=..\..\..\Config\Swervito64.zcache
+AudioRDB=..\..\..\Config\Audio.rdb
+Auto Sleep=0
+Basic Mode=0
+CheatDir=..\..\..\Config\Cheats\
+EnhancementDir=..\..\..\Config\Enhancements\
+ExtInfo=..\..\..\Config\Swervito64.rdx
+Notes=..\..\..\Config\Swervito64.rdn
+RomDatabase=..\..\..\Config\Swervito64.rdb
+RomListCache=..\..\..\Config\Swervito64.cache3
+ShortCuts=..\..\..\Config\Swervito64.sc3
+UserCheatDir=..\..\Config\Cheats-User\
+UserEnhancementDir=..\..\..\Config\Enhancements-User\
+VideoRDB=..\..\..\Config\Video.rdb
+
+[Debugger]
+Debugger=1
+
+[Plugin Directory]
+Directory-x86=..\..\..\Plugin\Win32\
+Directory-x64=..\..\..\Plugin\x64\
+Use Selected=1
+
+[Native Save Directory]
+Directory=..\..\..\Save\
+Use Selected=1
+
+[Instant Save Directory]
+Directory=..\..\..\Save\
+Use Selected=1
+
+[Lang Directory]
+Directory=..\..\..\Lang
+
+[Texture Directory]
+Directory=..\..\..\Textures\
+Use Selected=1

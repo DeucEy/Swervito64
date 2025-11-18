@@ -57,10 +57,10 @@
 
 // Help menu
 #180#  "&Hjelp"
-#182#  "&Om Project64"
+#182#  "&Om Swervito64"
 #183# "Brukerstøtte&forum"
 #184# "&Hjemmeside"
-#185#  "&Støtt Project64"
+#185#  "&Støtt Swervito64"
 #186#  "&Discord"
 
 // Current save slot menu
@@ -130,7 +130,7 @@
 #277#  "Om forfatterne av brukerstøttefilene"
 #279#  "Åpne sist brukte ROM-bilde"
 #280#  "Bruk denne mappen som din ROM-mappe"
-#281#  "Bytt Project64 til dette språket"
+#281#  "Bytt Swervito64 til dette språket"
 #282#  "Velg denne lagringsplassen for systemtilstanden"
 #283#  "Start det valgte spillet"
 #284#  "Se informasjon om det valgte spillet"
@@ -220,7 +220,7 @@
 #464#  "Slå av skjermsparer når en ROM kjører"
 #465#  "Vis hastighet"
 #466#  "Hastighetsvisning:"
-#467#  "Sjekk om Project64 allerede kjører"
+#467#  "Sjekk om Swervito64 allerede kjører"
 #468#  "Legg spillagringsfiler i separate mapper"
 #469#  "Japansk salgsversjons–64DD IPL ROM–sti:"
 #470#  "Amerikansk salgsversjons–64DD IPL ROM–sti:"
@@ -435,21 +435,21 @@
 
 /*** Support window ***/
 
-#1200#  "Støtt Project64"
-#1201#  "Project64 er en gratis Nintendo 64-emulator med åpen kildekode. Det lar deg spille N64-programmvare likt slik det hadde vært på den originale konsollen.\n\nJeg beklager for ubeleiligheten ved denne meldingsboksen, men du blir bedt om å vente noen få sekunder før du nyter resultatet av hundrevis av timer med arbeid.\n\nHvis du kan og har lyst til å støtte Project64 eller har fått noe verdi ut av programmet så vær så snill og støtt Project64, enten som takk, eller av et ønske om å fjerne denne meldingsboksen.\n\nHvis du har støttet Project64:"
+#1200#  "Støtt Swervito64"
+#1201#  "Swervito64 er en gratis Nintendo 64-emulator med åpen kildekode. Det lar deg spille N64-programmvare likt slik det hadde vært på den originale konsollen.\n\nJeg beklager for ubeleiligheten ved denne meldingsboksen, men du blir bedt om å vente noen få sekunder før du nyter resultatet av hundrevis av timer med arbeid.\n\nHvis du kan og har lyst til å støtte Swervito64 eller har fått noe verdi ut av programmet så vær så snill og støtt Swervito64, enten som takk, eller av et ønske om å fjerne denne meldingsboksen.\n\nHvis du har støttet Swervito64:"
 #1202#  "Skriv inn/be om støttekode"
-#1203#  "Søtt Project64"
+#1203#  "Søtt Swervito64"
 #1204#  "Fortsett"
 #1205#  "Vennligst skriv inn støttekoden"
 #1206#  "Klarte ikke validere koden\n\nPass på at koden matcher med e-posten basert på enheten din"
 #1207#  "Tusen takk"
 #1208#  "Vennligst skriv inn støttekoden din"
-#1209#  "Vennligst skriv inn koden du mottok på e-post.\n\nDenne e-posten blir sendt til e-postadressen oppgitt ved støtting av Project64.\n\nMerk at koden kun virker på én unik enhet. Denne enhetens ID er:"
+#1209#  "Vennligst skriv inn koden du mottok på e-post.\n\nDenne e-posten blir sendt til e-postadressen oppgitt ved støtting av Swervito64.\n\nMerk at koden kun virker på én unik enhet. Denne enhetens ID er:"
 #1210#  "OK"
 #1211#  "Avbryt"
 #1212#  "Be om kode"
 #1213#  "En kode har blitt sendt til e-postadressen din"
-#1214#  "Klarte ikke sende koden, vennligst pass på at du skrev inn samme e-postadresse som den som ble oppgitt ved støtting av Project64"
+#1214#  "Klarte ikke sende koden, vennligst pass på at du skrev inn samme e-postadresse som den som ble oppgitt ved støtting av Swervito64"
 
 /*** Enhancements ***/
 
@@ -485,7 +485,7 @@
 #2025#  "Feil"
 #2026#  "Opphavsrettssekvens ikke funnet i LUT. Spillet vil ikke lenger fungere."
 #2027#  "Kopibeskyttelsesfeil"
-#2028#  "Å endre et tillegg krever at Project64 tilbakestiller en kjørende ROM.\nSvar "Nei" og lagre den nåværende systemtilstanden først dersom du ikke ønsker å miste fremgangen din.\n\nEndre tillegg og tilbakestill ROM nå?"
+#2028#  "Å endre et tillegg krever at Swervito64 tilbakestiller en kjørende ROM.\nSvar "Nei" og lagre den nåværende systemtilstanden først dersom du ikke ønsker å miste fremgangen din.\n\nEndre tillegg og tilbakestill ROM nå?"
 #2029#  "Endre tillegg"
 #2030#  "Emulering stoppet"
 #2031#  "Emulering startet"
@@ -508,7 +508,7 @@
 #2048#  "Snarveien har allerede blitt tilordnet et annet menyelement."
 #2049#  "Ingen snarveier har blitt markert for sletting."
 #2050#  "ROM lastet inn. Venter på at emulering skal starte."
-#2051#  "Project64-betaversjoner er kun for medlemmer.\n\nDersom du har en konto på www.pj64-emu.com burde du ikke se denne feilmeldingen!!\nVennligst kontakt oss på nettsiden."
+#2051#  "Swervito64-betaversjoner er kun for medlemmer.\n\nDersom du har en konto på www.pj64-emu.com burde du ikke se denne feilmeldingen!!\nVennligst kontakt oss på nettsiden."
 #2052#  "Programfeil"
 #2053#  "Klarte ikke finne filnavn i 7z-fil"
 #2054#  "Lavnivåemulering av grafikk"
@@ -540,11 +540,11 @@
 #3013#  "OK"
 #3014#  "Avbryt"
 #3015#  "Informasjon"
-#3016#  "Project64 for Android"
+#3016#  "Swervito64 for Android"
 #3017#  "Lisens"
 #3018#  "Revisjon"
-#3019#  "Project64 for Android\u2122 er en portering av Windows-versjonen av Project64. Android\u2122-versjonen kan spille de fleste N64-spill."
-#3020#  "Project64-forfatterne."
+#3019#  "Swervito64 for Android\u2122 er en portering av Windows-versjonen av Swervito64. Android\u2122-versjonen kan spille de fleste N64-spill."
+#3020#  "Swervito64-forfatterne."
 #3021#  "Discord"
 
 // In-game menu

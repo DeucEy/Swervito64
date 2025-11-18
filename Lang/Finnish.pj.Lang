@@ -119,10 +119,10 @@
 #272#  "Muuta RSP pluginin asetuksia"
 #273#  "Näytä emulaattorin prosessorin käyttö jaettuna eri resursseihin"
 #274#  "Näytä/Muuta tämän ohjelman asetuksia"
-#275#  "Näytä Project64 ohjelman ohjeet"
+#275#  "Näytä Swervito64 ohjelman ohjeet"
 #276#  "Näytä pelien usein kysytyt kysymykset"
 #277#  "Tietoa INI tiedostojen tekijöistä"
-#278#  "Tietoa Project64 ohjelmasta ja sen tekijöistä"
+#278#  "Tietoa Swervito64 ohjelmasta ja sen tekijöistä"
 #279#  "Avaa tämä ROM tiedosto"
 #280#  "Valitse tämä hakemisto ROM hakemistoksi"
 #281#  "Vaihda ohjelma käyttämään tätä kieltä - Choose language"
@@ -166,7 +166,7 @@
 * Options                                                                        *
 *********************************************************************************/
 //Options Title
-#400#  "Project64 ohjelman asetukset"
+#400#  "Swervito64 ohjelman asetukset"
 
 //Tabs
 #401#  "Plugin tiedostot"
@@ -363,7 +363,7 @@ Tarkista, että sinulle on ainakin yksi toimiva plugin tiedosto plugin hakemisto
 Tarkista, että sinulla ainakin yksi toimiva plugin tiedosto plugin hakemistossasi."
 #2006#  "Oletus- tai valittu RSP plugin puuttuu tai on viallinen.
 
-Tarkista, että olet asentanut Project64:n oikein ja että plugin hakemisto on oikea."
+Tarkista, että olet asentanut Swervito64:n oikein ja että plugin hakemisto on oikea."
 #2007#  "Oletus- tai valittu input plugin puuttuu tai on viallinen.
 
 Tarkista, että sinulle on ainakin yksi toimiva plugin tiedosto plugin hakemistossasi."
@@ -404,7 +404,7 @@ Haluatko varmasti jatkaa lataamista?"
 #2025#  "Virhe"
 #2026#  "Tekijänoikeus jaksoa ei löytynyt LUT:stä. Peli ei enää toimi."
 #2027#  "Kopiosuojaus virhe"
-#2028#  "Plugin muutosten takia Project64:n on käynnistettävä avattu ROM tiedosto uudestaan.
+#2028#  "Plugin muutosten takia Swervito64:n on käynnistettävä avattu ROM tiedosto uudestaan.
 Jos et halua menettää nykyistä pelitilannetta, vastaa Ei, ja tee tallennus pelitilanteesta ensin.
 
 Muuta plugini(t) ja käynnistä peli uudestaan nyt?"

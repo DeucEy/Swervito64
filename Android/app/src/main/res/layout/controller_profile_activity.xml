@@ -12,8 +12,8 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:theme="@style/Theme.Project64.ToolBar"
-        app:titleTextAppearance="@style/Theme.Project64.ToolBar.TitleText"
+        android:theme="@style/Theme.Swervito64.ToolBar"
+        app:titleTextAppearance="@style/Theme.Swervito64.ToolBar.TitleText"
         />
 
 <!--

@@ -1,5 +1,5 @@
 #pragma once
-#include <Project64-core\Settings\SettingsID.h>
+#include <Swervito64-core\Settings\SettingsID.h>
 #include <map>
 #include <string>
 

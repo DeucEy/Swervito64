@@ -7,7 +7,7 @@ apply from: '../config/version.gradle'
 android {
 
     defaultConfig {
-        applicationId = "emu.Project64"
+        applicationId = "emu.Swervito64"
 
         externalNativeBuild {
             cmake {
@@ -39,11 +39,11 @@ dependencies {
     implementation project(':jni:3rdParty:zlib')
     implementation project(':jni:Common')
     implementation project(':jni:Settings')
-    implementation project(':jni:Project64-rsp-core')
-    implementation project(':jni:Project64-core')
-    implementation project(':jni:Project64-bridge')
-    implementation project(':jni:Project64-video')
-    implementation project(':jni:Project64-audio')
+    implementation project(':jni:Swervito64-rsp-core')
+    implementation project(':jni:Swervito64-core')
+    implementation project(':jni:Swervito64-bridge')
+    implementation project(':jni:Swervito64-video')
+    implementation project(':jni:Swervito64-audio')
     implementation project(':jni:Plugin-input')
     implementation project(':jni:Plugin-rsp')
 }

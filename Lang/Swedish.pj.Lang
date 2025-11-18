@@ -75,9 +75,9 @@
 
 //Help Menu
 #180#  "&Hjälp"
-#182#  "&Om Project64"
+#182#  "&Om Swervito64"
 #184#  "&Webbsida"
-#185#  "&Stöd Project64"
+#185#  "&Stöd Swervito64"
 #186#  "&Discord"
 
 //Current Save Slot menu
@@ -245,7 +245,7 @@
 #464#  "Inaktivera skärmsläckare när en ROM körs"
 #465#  "Visningshastighet"
 #466#  "Hastighetsvisning:"
-#467#  "Kontrollera om Project64 redan körs"
+#467#  "Kontrollera om Swervito64 redan körs"
 #468#  "Lagra spelsparningar i separata mappar"
 #469#  "Sökväg för 64DD IPL ROM för japansk retail:"
 #470#  "Sökväg för 64DD IPL ROM för amerikansk retail:"
@@ -460,16 +460,16 @@
 
 /*** Support window ***/
 
-#1200#  "Stöd Project64"
-#1201#  "Project64 är en fri Nintendo 64-emulator byggd på öppen källkod.\n\nDen låter dig spela riktiga N64-program på samma sätt som det skulle vara i den ursprunliga konsollen.\n\nJag är ledsen för att visa denna ruta men behöver be dig vänta några sekunder för att njuta av resultatet av hundratals timmars arbete.\n\nOm du kan och vill ge ditt stöd till Project64 eller att du har fått nytta av det så ge gärna ditt stöd till Project64 antingen som ett tack eller din önskan att ta bort denna ruta.\n\nOm du har gett ditt stöd till Project64:"
+#1200#  "Stöd Swervito64"
+#1201#  "Swervito64 är en fri Nintendo 64-emulator byggd på öppen källkod.\n\nDen låter dig spela riktiga N64-program på samma sätt som det skulle vara i den ursprunliga konsollen.\n\nJag är ledsen för att visa denna ruta men behöver be dig vänta några sekunder för att njuta av resultatet av hundratals timmars arbete.\n\nOm du kan och vill ge ditt stöd till Swervito64 eller att du har fått nytta av det så ge gärna ditt stöd till Swervito64 antingen som ett tack eller din önskan att ta bort denna ruta.\n\nOm du har gett ditt stöd till Swervito64:"
 #1202#  "Ange/begärd notifieringskod"
-#1203#  "Stöd Project64"
+#1203#  "Stöd Swervito64"
 #1204#  "Fortsätt"
 #1205#  "Ange supportkoden"
 #1206#  "Misslyckades med att validera koden\n\nFörsäkra dig om att koden i e-postmeddelandet matchar baserat på din maskin"
 #1207#  "Tack"
 #1208#  "Ange din supportkod"
-#1209#  "Ange koden som du fick i din e-post.\n\nE-postmeddelandet kommer att skickas till e-postadress som du använde för Project64.\n\nNotera att koden endast fungerar för en unik maskin. ID för denna dator är:"
+#1209#  "Ange koden som du fick i din e-post.\n\nE-postmeddelandet kommer att skickas till e-postadress som du använde för Swervito64.\n\nNotera att koden endast fungerar för en unik maskin. ID för denna dator är:"
 #1210#  "OK"
 #1211#  "Avbryt"
 #1212#  "Begär kod"
@@ -510,7 +510,7 @@
 #2025#  "Fel"
 #2026#  "Copyright-sekvens hittades inte i LUT. Spelet kommer inte längre att fungera."
 #2027#  "Fel i kopieringsskydd"
-#2028#  "Byte av en insticksmodul kräver att Project64 startar om en körande ROM.\nOm du inte vill förlora din plats, svara Nej och spara det aktuella tillståndet först.\n\nByta insticksmoduler och starta om ROM nu?"
+#2028#  "Byte av en insticksmodul kräver att Swervito64 startar om en körande ROM.\nOm du inte vill förlora din plats, svara Nej och spara det aktuella tillståndet först.\n\nByta insticksmoduler och starta om ROM nu?"
 #2029#  "Byt insticksmoduler"
 #2030#  "Emulation abslutad"
 #2031#  "Emulation startad"
@@ -533,7 +533,7 @@
 #2048#  "Genväg har redan tilldelats till en annan menypost."
 #2049#  "Ingen genväg har markerats för att tas bort."
 #2050#  "ROM inläst. Väntar på att emuleringen startas."
-#2051#  "Betaversioner av Project64 är endast för medlemmar.\n\nOm du har ett konto på www.pj64-emu.com så ska du inte se detta fel!!\nKontakta oss på webbplatsen."
+#2051#  "Betaversioner av Swervito64 är endast för medlemmar.\n\nOm du har ett konto på www.pj64-emu.com så ska du inte se detta fel!!\nKontakta oss på webbplatsen."
 #2052#  "Programfel"
 #2053#  "Misslyckades med att hitta filnamn i 7z-filen"
 #2054#  "Lågnivåemulering för grafik"
@@ -565,11 +565,11 @@
 #3013#  "OK"
 #3014#  "Avbryt"
 #3015#  "Information"
-#3016#  "Project64 för Android"
+#3016#  "Swervito64 för Android"
 #3017#  "Licens"
 #3018#  "Revision"
-#3019#  "Project64 för Android\u2122 är en portering av Windows-versionen av Project64. Android\u2122-versionen kan spela de flesta N64-spel."
-#3020#  "Upphovspersoner för Project64."
+#3019#  "Swervito64 för Android\u2122 är en portering av Windows-versionen av Swervito64. Android\u2122-versionen kan spela de flesta N64-spel."
+#3020#  "Upphovspersoner för Swervito64."
 #3021#  "Discord"
 
 // In-game menu

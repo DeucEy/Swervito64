@@ -73,7 +73,7 @@
 //Help Menu
 #180#  "&Hilfe"
 #181#  "Benutzte &Dateien"
-#182#  "&Über Project64"
+#182#  "&Über Swervito64"
 #183#  "Support-&Forum"
 #184#  "Home&page"
 
@@ -215,13 +215,13 @@
 #440#  "&Plugin-Verzeichnis:"
 #441#  "&ROM-Verzeichnis:"
 #442#  "&N64-Spielstände im Verzeichnis:"
-#443#  "&Project64-Spielstände im Verzeichnis:"
+#443#  "&Swervito64-Spielstände im Verzeichnis:"
 #444#  "Screenshot-&Verzeichnis:"
 #445#  "&Letztes ROM-Verzeichnis speichern"
 #446#  "Verzeichnis für Plugins auswählen"
 #447#  "Verzeichnis für ROMs auswählen"
 #448#  "Verzeichnis für N64-Spielstände auswählen"
-#449#  "Verzeichnis für Project64-Spielstände auswählen"
+#449#  "Verzeichnis für Swervito64-Spielstände auswählen"
 #450#  "Verzeichnis für Screenshots auswählen"
 #451#  "Texturepack-Verzeichnis: "
 #452#  "Verzeichnis für Texturepacks auswählen"
@@ -234,7 +234,7 @@
 #464#  "Bildschirmschoner während der Emulation &deaktivieren"
 #465#  "&Geschwindigkeit"
 #466#  "Geschw. &anzeigen:"
-#467#  "Auf laufende &Project64-Instanzen prüfen"
+#467#  "Auf laufende &Swervito64-Instanzen prüfen"
 #468#  "Eindeutige &Verzeichnisnamen für Spielstände"
 #469#  "64DD IPL &ROM-Verzeichnis:"
 
@@ -443,10 +443,10 @@
 /*********************************************************************************
 * Support Window                                                                 *
 *********************************************************************************/
-#1200#  "Project64 unterstützen"
-#1201#  "Project64 ist ein Nintendo64 Emulator für Windows Betriebssysteme. Mit Project64 lassen sich N64-Spiele auf dieselbe Weise spielen, wie es mit einem original Nintendo64 möglich ist.\n\nFalls dir Project64 gefällt, wäre es nett, wenn du das Projekt als Dankeschön oder für weitere Entwicklung unterstützt.\n\nBei Unterstützung von Project64:"
+#1200#  "Swervito64 unterstützen"
+#1201#  "Swervito64 ist ein Nintendo64 Emulator für Windows Betriebssysteme. Mit Swervito64 lassen sich N64-Spiele auf dieselbe Weise spielen, wie es mit einem original Nintendo64 möglich ist.\n\nFalls dir Swervito64 gefällt, wäre es nett, wenn du das Projekt als Dankeschön oder für weitere Entwicklung unterstützt.\n\nBei Unterstützung von Swervito64:"
 #1202#  "Code eingeben"
-#1203#  "Project64 Unterstützung"
+#1203#  "Swervito64 Unterstützung"
 #1204#  "Weiter"
 #1205#  "Bitte den Support-Code eingeben"
 #1206#  "Falscher Support-Code"
@@ -510,7 +510,7 @@
 #2048#  "Shortcut ist bereits zu einem anderen Menü-Eintrag zugeordnet."
 #2049#  "Es wurde kein Shortcut zum Entfernen ausgewählt."
 #2050#  "ROM geladen. Warte auf Start der Emulation."
-#2051#  "Project64 Beta-Versionen sind nur für Member.\n\nFalls Sie einen Accoutn auf www.pj64-emu.com besitzen, sollten Sie diesen Fehler nicht sehen!!\nBitte kontaktieren Sie uns auf unserer Webseite."
+#2051#  "Swervito64 Beta-Versionen sind nur für Member.\n\nFalls Sie einen Accoutn auf www.pj64-emu.com besitzen, sollten Sie diesen Fehler nicht sehen!!\nBitte kontaktieren Sie uns auf unserer Webseite."
 #2052#  "Programm-Fehler"
 #2053#  "Dateiname in 7z-Datei nicht gefunden"
 #2054#  "Grafik Low-Level-Emulation"
@@ -538,11 +538,11 @@
 #3013#  "Ok"
 #3014#  "Abbrechen"
 #3015#  "Infor"
-#3016#  "Project64 für Android"
+#3016#  "Swervito64 für Android"
 #3017#  "Lizenz"
 #3018#  "Revision"
-#3019#  "Project64 für Android\u2122 ist eine Portierung der Windows-Version von Project64.Die Android\u2122 Version kann die meisten N64-Spiele abspielen."
-#3020#  "Project64 Autoren."
+#3019#  "Swervito64 für Android\u2122 ist eine Portierung der Windows-Version von Swervito64.Die Android\u2122 Version kann die meisten N64-Spiele abspielen."
+#3020#  "Swervito64 Autoren."
 
 //In game menu
 #3100#  "Einstellungen"

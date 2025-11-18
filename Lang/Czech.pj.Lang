@@ -13,12 +13,12 @@
 #7  #  "Verze"
 #8  #  "Datum"
 #9  #  "Autorova domovská stránka"
-#10 #  "ROM databáze (Project64.rdb)"
-#11 #  "Cheat kód soubor (Project64.cht)"
-#12 #  "Rozšíøené ROM informace (Project64.rdx)"
+#10 #  "ROM databáze (Swervito64.rdb)"
+#11 #  "Cheat kód soubor (Swervito64.cht)"
+#12 #  "Rozšíøené ROM informace (Swervito64.rdx)"
 
 //About INI title
-#20 #  "Project64 aktuálnì používá:"
+#20 #  "Swervito64 aktuálnì používá:"
 
 /*********************************************************************************
 * Menu                                                                           *
@@ -70,7 +70,7 @@
 //Help Menu
 #180#  "&Nápovìda"
 #181#  "O INI &souborech"
-#182#  "&O programu Project64"
+#182#  "&O programu Swervito64"
 
 //Current Save Slot menu
 #190#  "&Standardní sektor (.pj)"
@@ -98,32 +98,32 @@
 #253#  "Zastaví emulaci nahrané ROM a vrátí se do prohlížeèe"
 #254#  "Zmìní složku ROM prohlížeèe"
 #255#  "Obnoví okno prohlížeèe k promítnutí zmìn v ROM složce"
-#256#  "Ukonèí Project64"
+#256#  "Ukonèí Swervito64"
 #257#  "Restartuje bìžící ROM a nechá nabýt úèinku jakýkoliv zmìn v nastavení"
 #258#  "Pozastaví/obnoví emulaci bìžící ROM"
 #259#  "Vygeneruje bitmapu skrz video plugin"
 #260#  "Omezí VI/s ke korekci rychlosti pro ROM region"
-#261#  "Uloží Project64 stav do nynìjšího sektoru"
-#262#  "Uloží Project64 stav do jakéhokoliv umístìní a názvu souboru"
-#263#  "Nahraje Project64 stav z nynìjšího sektoru"
-#264#  "Nahraje Project64 stav z jakéhokoliv umístìní a názvu souboru"
+#261#  "Uloží Swervito64 stav do nynìjšího sektoru"
+#262#  "Uloží Swervito64 stav do jakéhokoliv umístìní a názvu souboru"
+#263#  "Nahraje Swervito64 stav z nynìjšího sektoru"
+#264#  "Nahraje Swervito64 stav z jakéhokoliv umístìní a názvu souboru"
 #265#  "Vybere nebo pøidá cheat kódy pro bìžící ROM"
 #266#  "Emuluje stisk GameShark tlaèítka - pro použití s nìkterými cheaty"
 #267#  "Pøepne z okenního módu do celoobrazovkového módu (stisknìte Escape k návratu!)"
-#268#  "Drží okno Project64 pøed ostatními okny"
+#268#  "Drží okno Swervito64 pøed ostatními okny"
 #269#  "Nakonfiguruje vybraný video (grafický) plugin"
 #270#  "Nakonfiguruje vybraný audio (zvukový) plugin"
 #271#  "Nakonfiguruje vybraný vstupní (ovladaè) plugin"
 #272#  "Nakonfiguruje RSP plugin"
 #273#  "Ukáže/skryje zobrazení využití systému CPU rozdìlený mezi složky emulátoru"
-#274#  "Project64 hlavní nastavení aplikace (výbìr pluginu atd.)"
-#275#  "Otevøe uživatelský manuál Project64"
-#276#  "Otevøe Project64 herní FAQ"
+#274#  "Swervito64 hlavní nastavení aplikace (výbìr pluginu atd.)"
+#275#  "Otevøe uživatelský manuál Swervito64"
+#276#  "Otevøe Swervito64 herní FAQ"
 #278#  "O aplikaci a autorech"
 #277#  "O autorech podpùrných souborù"
 #279#  "Nahraje nedávno nahranou ROM"
 #280#  "Pøepne zobrazení prohlížeèe na tuto složku"
-#281#  "Pøepne Project64 GUI do jiného jazyka"
+#281#  "Pøepne Swervito64 GUI do jiného jazyka"
 #282#  "Pøepne do jiného stavu uloženého sektoru"
 #283#  "Nahraje a zaène emulaci vybrané hry"
 #284#  "Zobrazí informace o vybrané høe"
@@ -163,7 +163,7 @@
 * Options                                                                        *
 *********************************************************************************/
 //Options Title
-#400#  "Nastavení Project64"
+#400#  "Nastavení Swervito64"
 
 //Tabs
 #401#  "Pluginy"
@@ -192,7 +192,7 @@
 #446#  "Vyberte složku pro pluginy"
 #447#  "Vyberte složku pro ROM"
 #448#  "Vyberte složku pro pùvodní N64 uložení"
-#449#  "Vyberte složku pro Project64 uložení stavù"
+#449#  "Vyberte složku pro Swervito64 uložení stavù"
 #450#  "Vyberte složku pro screenshoty"
 
 //Options Dialog
@@ -270,7 +270,7 @@ RDB není pøítomno nebo volba dole 'pøepsat' je nezaškrtnutá"
 #624#  "128-kbajtù flash RAM"
 
 //Shell Intergration Tab
-#640#  "S Project64 asociovat soubory"
+#640#  "S Swervito64 asociovat soubory"
 
 //ROM Notes
 #660#  "&Stav:"
@@ -360,7 +360,7 @@ Zkontrolujte, že máte alespoò jeden kompatibilní plugin soubor v plugin slo�
 Zkontrolujte, že máte alespoò jeden kompatibilní plugin soubor v plugin složce."
 #2006#  "Standardní nebo vybraný RSP plugin chybí nebo je poškozený.
 
-Zkontrolujte, zda máte Project64 øádnì nainstalovaný s platnou plugin cestou."
+Zkontrolujte, zda máte Swervito64 øádnì nainstalovaný s platnou plugin cestou."
 #2007#  "Standardní nebo vybraný vstupní plugin chybí nebo je poškozený.
 
 Zkontrolujte, že máte alespoò jeden kompatibilní plugin soubor v plugin složce."
@@ -401,7 +401,7 @@ Jste si jistý, že chcete pokraèovat v nahrávání?"
 #2025#  "Chyba aplikace/jádra"
 #2026#  "Copyright sekvence nenalezena v LUT.  Hra již nebude nadále funkèní."
 #2027#  "Selhala ochrana proti kopírování"
-#2028#  "Zmìna pluginu vyžaduje, aby Project64 resetoval bìžící ROM.
+#2028#  "Zmìna pluginu vyžaduje, aby Swervito64 resetoval bìžící ROM.
 Jestliže nechcete ztratit Vaši pozici, odpovìzte Ne a nejprve vytvoøte uložení stavu.
 
 Zmìnit pluginy a restartovat hru?"

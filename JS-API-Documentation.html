@@ -2,7 +2,7 @@
 <!-- Generated Jan 12 2022 -->
 <!-- YAML source: https://github.com/shygoo/pj64d-docs -->
 <head>
-<title>Project64 JavaScript API 2022.01.12</title>
+<title>Swervito64 JavaScript API 2022.01.12</title>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <style>
 :root {
@@ -278,11 +278,11 @@ window.addEventListener('load', function() {
 <body>
 <div class="sidebar">
 <div class="sidebar-content">
-<div class="pagetitle">Project64 JavaScript API</div>
+<div class="pagetitle">Swervito64 JavaScript API</div>
 2022.01.12
 <hr>
 <ul>
-<p><li><a class="" href="#Project64 JavaScript API">Project64 JavaScript API</a><ul>
+<p><li><a class="" href="#Swervito64 JavaScript API">Swervito64 JavaScript API</a><ul>
 <li><a class="" href="#Required_settings">Required settings</a></li>
 <li><a class="" href="#Script_console">Script console</a></li>
 <li><a class="" href="#JavaScript_environment">JavaScript environment</a></li>
@@ -294,7 +294,7 @@ window.addEventListener('load', function() {
 <li><a class="" href="#console_clear">console.clear()</a></li>
 <li><a class="" href="#console_listen">console.listen(inputListener)</a></li>
 </ul></li></p>
-<p><li><a class="" href="#pj64">pj64</a>: Project64 interface<ul>
+<p><li><a class="" href="#pj64">pj64</a>: Swervito64 interface<ul>
 <li><a class="" href="#pj64_open">pj64.open(romPath)</a></li>
 <li><a class="" href="#pj64_close">pj64.close()</a></li>
 <li><a class="" href="#pj64_reset">pj64.reset([soft])</a></li>
@@ -472,9 +472,9 @@ window.addEventListener('load', function() {
 </div>
 </div>
 <div class="content">
-<!-- Project64 JavaScript API -->
+<!-- Swervito64 JavaScript API -->
 <div class="module">
-<div class="modtitle"><span class="title" id="Project64 JavaScript API">Project64 JavaScript API</span></div>
+<div class="modtitle"><span class="title" id="Swervito64 JavaScript API">Swervito64 JavaScript API</span></div>
 <!-- Required_settings -->
 <p><div class="prop"><span class="title" id="Required_settings">Required settings</span></div>
 </p>
@@ -499,12 +499,12 @@ JavaScript (<span class="snip">*.js</span>) files in the root of this directory 
 <p>While a script is active you may select it and enter code in the input box at the bottom of of the window.
 Entered code is evaluated in the selected script's instance (namespace is not shared between instances).
 You can use the up and down arrow keys to scroll through input history.</p>
-<p>You may configure a script to run automatically when Project64 is started by right clicking it and clicking <i>Autorun...</i></p>
+<p>You may configure a script to run automatically when Swervito64 is started by right clicking it and clicking <i>Autorun...</i></p>
 <p><img src="data:image/png;base64,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"></p>
 <!-- JavaScript_environment -->
 <p><div class="prop"><span class="title" id="JavaScript_environment">JavaScript environment</span></div>
 </p>
-<p>Project64's script system uses the <a target="blank" href="https://duktape.org/">Duktape JavaScript engine</a>. Duktape supports ECMAScript E5 and some features from ES2015+.</p>
+<p>Swervito64's script system uses the <a target="blank" href="https://duktape.org/">Duktape JavaScript engine</a>. Duktape supports ECMAScript E5 and some features from ES2015+.</p>
 <ul>
 <li><a target="blank" href="https://wiki.duktape.org/postes5features">Post-ES5 features</a></li>
 <li><a target="blank" href="https://duktape.org/guide.html#duktapebuiltins">Duktape built-ins</a></li>
@@ -571,7 +571,7 @@ Clears the console.
 <!-- pj64 -->
 <div class="module">
 <div class="modtitle"><span class="title" id="pj64">pj64</span></div>
-Project64 interface
+Swervito64 interface
 <!-- pj64_open -->
 <p><div class="prop"><span class="title" id="pj64_open">pj64.open(romPath)</span></div>
 <div class="tsproto">pj64.open(romPath: string): void</div>
@@ -606,7 +606,7 @@ Enables or disables the FPS limit.
 <p><div class="prop"><span class="title" id="pj64_installDirectory">pj64.installDirectory</span></div>
 <div class="tsproto">pj64.installDirectory: string</div>
 </p>
-Path to the directory containing the Project64 executable. Read-only.
+Path to the directory containing the Swervito64 executable. Read-only.
 <!-- pj64.scriptsDirectory -->
 <p><div class="prop"><span class="title" id="pj64_scriptsDirectory">pj64.scriptsDirectory</span></div>
 <div class="tsproto">pj64.scriptsDirectory: string</div>
@@ -764,7 +764,7 @@ The size of cartridge ROM in bytes. <span class="snip">0</span> if ROM is not in
 <p><div class="prop"><span class="title" id="mem_ptr">mem.ptr</span></div>
 <div class="tsproto">mem.ptr: pointer</div>
 </p>
-Native pointer to Project64's N64 memory buffer. May be used by native modules for faster memory access.
+Native pointer to Swervito64's N64 memory buffer. May be used by native modules for faster memory access.
 <pre class="ex">
 <span class="js-comment">// C</span>
 <span class="js-word">duk_ret_t</span> <span class="js-word">example</span>(<span class="js-word">duk_context</span>* <span class="js-word">ctx</span>)
@@ -1842,8 +1842,8 @@ Reference to the global object.
 </p>
 <p>API major version name.</p>
 <table>
-<tr><td><span class="snip">"jsapi-2"</span></td><td>Second edition (Project64 4.0+)</td></tr>
-<tr><td><span class="snip">undefined</span></td><td><a target="blank" href="https://htmlpreview.github.io/?https://github.com/project64/project64/blob/5d0d9927b1fd91e9647eb799f68e132804de924e/apidoc.htm">First edition</a> (Project64 2.4 to 3.x)</td></tr>
+<tr><td><span class="snip">"jsapi-2"</span></td><td>Second edition (Swervito64 4.0+)</td></tr>
+<tr><td><span class="snip">undefined</span></td><td><a target="blank" href="https://htmlpreview.github.io/?https://github.com/DeucEy/Swervito64/blob/5d0d9927b1fd91e9647eb799f68e132804de924e/apidoc.htm">First edition</a> (Swervito64 2.4 to 3.x)</td></tr>
 </table>
 <pre class="ex">
 <span class="js-keyword">if</span> (<span class="js-keyword">typeof</span> <span class="js-word">PJ64_JSAPI_VERSION</span> !== <span class="js-string">'undefined'</span>) {
@@ -1853,7 +1853,7 @@ Reference to the global object.
     <span class="js-comment">// use old API</span>
 }
 </pre>
-See also: <a target="blank" href="https://htmlpreview.github.io/?https://github.com/project64/project64/blob/5d0d9927b1fd91e9647eb799f68e132804de924e/apidoc.htm">First edition documentation</a>
+See also: <a target="blank" href="https://htmlpreview.github.io/?https://github.com/DeucEy/Swervito64/blob/5d0d9927b1fd91e9647eb799f68e132804de924e/apidoc.htm">First edition documentation</a>
 <!-- require -->
 <p><div class="prop"><span class="title" id="require">require(id)</span></div>
 <div class="tsproto">require(id: string): Object</div>
@@ -1895,7 +1895,7 @@ Executes a system command. Does not return until the subprocess exits.
 <table>
 <tr><td><span class="snip">showWindow</span></td><td>If <span class="snip">true</span>, the window of the subprocess is visible. <span class="snip">false</span> by default.</td></tr>
 <tr><td><span class="snip">verbose</span></td><td>If <span class="snip">true</span>, the output of the subprocess is sent to the script manager console. <span class="snip">false</span> by default.</td></tr>
-<tr><td><span class="snip">cwd</span></td><td>Current working directory of the subprocess. By default this is the directory containing Project64.</td></tr>
+<tr><td><span class="snip">cwd</span></td><td>Current working directory of the subprocess. By default this is the directory containing Swervito64.</td></tr>
 </table>
 
 <p>This function throws an error if the operation fails or if the exit code of the subprocess is non-zero.

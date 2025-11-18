@@ -74,7 +74,7 @@
 //Help Menu
 #180#  "&Yardım"
 #181#  "Yapılandırma Dosyaları Hakkında"
-#182#  "&Project64 Hakkında"
+#182#  "&Swervito64 Hakkında"
 #183# "Destek &Forumu"
 #184# "&Ana Sayfa"
 
@@ -238,7 +238,7 @@
 #464#  "ROM çalışırken ekran koruyucuyu devre dışı bırak"
 #465#  "Ekran hızı"
 #466#  "Hız göstergesi:"
-#467#  "Project64'ün zaten çalışır durumda olup olmadığını kontrol et"
+#467#  "Swervito64'ün zaten çalışır durumda olup olmadığını kontrol et"
 #468#  "Benzersiz Oyun Kayıt Dizini"
 #469#  "Japon 64DD IPL ROM Yolu:"
 #470#  "Amerikan 64DD IPL ROM Yolu:"
@@ -454,10 +454,10 @@
 /*********************************************************************************
 * Support Window                                                                 *
 *********************************************************************************/
-#1200#  "Project64'ü Destekle"
-#1201#  "Project64, Microsoft Windows tabanlı bir bilgisayarda Nintendo64 video oyun sistemini emüle etmek için tasarlanmış bir yazılım paketidir. Bu, gerçek N64 yazılımını, orijinal donanım sistemindeki gibi oynatmanızı sağlar.\n\nProject64'ten hoşlanıyorsanız ve onu kullanmaktan zevk alıyorsanız, lütfen project64'ü bir teşekkür olarak veya sürekli olarak iyileştirilme arzusuyla destekleyin.\n\nProject64'ü desteklediyseniz:"
+#1200#  "Swervito64'ü Destekle"
+#1201#  "Swervito64, Microsoft Windows tabanlı bir bilgisayarda Nintendo64 video oyun sistemini emüle etmek için tasarlanmış bir yazılım paketidir. Bu, gerçek N64 yazılımını, orijinal donanım sistemindeki gibi oynatmanızı sağlar.\n\nSwervito64'ten hoşlanıyorsanız ve onu kullanmaktan zevk alıyorsanız, lütfen Swervito64'ü bir teşekkür olarak veya sürekli olarak iyileştirilme arzusuyla destekleyin.\n\nSwervito64'ü desteklediyseniz:"
 #1202#  "Bildirim kodunu giriniz"
-#1203#  "Project64'ü Destekle"
+#1203#  "Swervito64'ü Destekle"
 #1204#  "Devam et"
 #1205#  "Lütfen destek kodunu giriniz"
 #1206#  "Yanlış destek kodu"
@@ -498,7 +498,7 @@
 #2025#  "Hata"
 #2026#  "Telif hakkı dizisi LUT'ta bulunamadı. Oyun artık çalışmayacak."
 #2027#  "Kopya Koruma Hatası"
-#2028#  "Bir eklentiyi değiştirmek için Project64'ün çalışan bir ROM'u yeniden başlatması gerekiyor.\nEğer oyundaki yerinizi kaybetmek istemiyorsanız Hayır cevabını verin ve öncelikle mevcut durumu kaydedin.\n\nEklentiler değiştirilip ROM yeniden başlatılsın mı?"
+#2028#  "Bir eklentiyi değiştirmek için Swervito64'ün çalışan bir ROM'u yeniden başlatması gerekiyor.\nEğer oyundaki yerinizi kaybetmek istemiyorsanız Hayır cevabını verin ve öncelikle mevcut durumu kaydedin.\n\nEklentiler değiştirilip ROM yeniden başlatılsın mı?"
 #2029#  "Eklentileri Değiştir"
 #2030#  "Emülatör sona erdi"
 #2031#  "Emülatör başladı"
@@ -521,7 +521,7 @@
 #2048#  "Kısayol zaten başka bir menü öğesine atanmış."
 #2049#  "Kaldırılacak kısayol seçilmedi."
 #2050#  "ROM yüklendi. Emülatörün başlaması bekleniyor."
-#2051#  "Project64'ün beta sürümleri sadece üyeler içindir.\n\nEğer www.pj64-emu.com adresinde bir hesabınız varsa bu hatayı görmemelisiniz!!\nLütfen siteden bize ulaşın."
+#2051#  "Swervito64'ün beta sürümleri sadece üyeler içindir.\n\nEğer www.pj64-emu.com adresinde bir hesabınız varsa bu hatayı görmemelisiniz!!\nLütfen siteden bize ulaşın."
 #2052#  "Program Hatası"
 #2053#  "7z dosyasında dosya adı bulunamadı"
 #2054#  "Grafik Düşük Seviye Emülatör"
@@ -552,11 +552,11 @@
 #3013#  "Tamam"
 #3014#  "İptal"
 #3015#  "Bilgi"
-#3016#  "Android için Project64"
+#3016#  "Android için Swervito64"
 #3017#  "Lisans"
 #3018#  "Revizyon"
-#3019#  "Android\u2122 için Project64, project64'ün Windows sürümünün bir bağlantı noktasıdır. Android\u2122 sürümü çoğu N64 oyununu oynatabilir."
-#3020#  "Project64 Yazarları."
+#3019#  "Android\u2122 için Swervito64, Swervito64'ün Windows sürümünün bir bağlantı noktasıdır. Android\u2122 sürümü çoğu N64 oyununu oynatabilir."
+#3020#  "Swervito64 Yazarları."
 #3021#  "Discord"
 
 //In game menu

@@ -35,28 +35,28 @@ echo copy PluginRSP
 xcopy "%base_dir%/Source/Android/PluginRSP" "%base_dir%/Android/jni/Plugin-Rsp/" /D /I /F /Y /E
 IF %ERRORLEVEL% NEQ 0 (exit /B 1)
 
-echo copy Project64-bridge
-xcopy "%base_dir%/Source/Android/Bridge" "%base_dir%/Android/jni/Project64-bridge/" /D /I /F /Y /E
+echo copy Swervito64-bridge
+xcopy "%base_dir%/Source/Android/Bridge" "%base_dir%/Android/jni/Swervito64-bridge/" /D /I /F /Y /E
 IF %ERRORLEVEL% NEQ 0 (exit /B 1)
 
-echo copy Project64-audio
-xcopy "%base_dir%/Source/Project64-audio" "%base_dir%/Android/jni/Project64-audio/" /D /I /F /Y /E
+echo copy Swervito64-audio
+xcopy "%base_dir%/Source/Swervito64-audio" "%base_dir%/Android/jni/Swervito64-audio/" /D /I /F /Y /E
 IF %ERRORLEVEL% NEQ 0 (exit /B 1)
 
-echo copy Project64-plugin-spec
-xcopy "%base_dir%/Source/Project64-plugin-spec" "%base_dir%/Android/jni/Project64-plugin-spec/" /D /I /F /Y /E
+echo copy Swervito64-plugin-spec
+xcopy "%base_dir%/Source/Swervito64-plugin-spec" "%base_dir%/Android/jni/Swervito64-plugin-spec/" /D /I /F /Y /E
 IF %ERRORLEVEL% NEQ 0 (exit /B 1)
 
-echo copy Project64-core
-xcopy "%base_dir%/Source/Project64-core" "%base_dir%/Android/jni/Project64-core/" /D /I /F /Y /E
+echo copy Swervito64-core
+xcopy "%base_dir%/Source/Swervito64-core" "%base_dir%/Android/jni/Swervito64-core/" /D /I /F /Y /E
 IF %ERRORLEVEL% NEQ 0 (exit /B 1)
 
-echo copy Project64-rsp-core
-xcopy "%base_dir%/Source/Project64-rsp-core" "%base_dir%/Android/jni/Project64-rsp-core/" /D /I /F /Y /E
+echo copy Swervito64-rsp-core
+xcopy "%base_dir%/Source/Swervito64-rsp-core" "%base_dir%/Android/jni/Swervito64-rsp-core/" /D /I /F /Y /E
 IF %ERRORLEVEL% NEQ 0 (exit /B 1)
 
-echo copy Project64-video
-xcopy "%base_dir%/Source/Project64-video" "%base_dir%/Android/jni/Project64-video/" /D /I /F /Y /E
+echo copy Swervito64-video
+xcopy "%base_dir%/Source/Swervito64-video" "%base_dir%/Android/jni/Swervito64-video/" /D /I /F /Y /E
 IF %ERRORLEVEL% NEQ 0 (exit /B 1)
 
 echo copy Settings

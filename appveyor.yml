@@ -14,7 +14,7 @@ before_build:
     }
 - cmd: git submodule update --init --recursive
 build:
-  project: Project64.sln
+  project: Swervito64.sln
   parallel: true
   verbosity: minimal
 after_build:

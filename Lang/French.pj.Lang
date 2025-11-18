@@ -74,9 +74,9 @@
 
 //Help Menu
 #180#  "&Aide"
-#182#  "À &propos de Project64"
+#182#  "À &propos de Swervito64"
 #184#  "Site &web"
-#185#  "&Soutenir Project64"
+#185#  "&Soutenir Swervito64"
 #186#  "&Discord"
 
 //Current Save Slot menu
@@ -134,7 +134,7 @@
 #265#  "Activer/désactiver les cheats GameShark"
 #266#  "Le bouton GameShark est utilisé avec des cheats spécifiques."
 #267#  "Basculer l’émulation du mode fenêtré vers le mode plein écran."
-#268#  "Permet de mettre la fenêtre Project64 toujours au premier plan"
+#268#  "Permet de mettre la fenêtre Swervito64 toujours au premier plan"
 #269#  "Configurer le plugin graphique"
 #270#  "Configurer le plugin audio"
 #271#  "Configurer le plugin manettes (ex : choisir les touches)"
@@ -239,7 +239,7 @@
 #464#  "Désactiver l’écran de veille quand une ROM est lancée"
 #465#  "Afficher la vitesse"
 #466#  "Vitesse affichée:"
-#467#  "Vérifier si Project64 est déjà lancé"
+#467#  "Vérifier si Swervito64 est déjà lancé"
 #468#  "Répertoire de sauvegarde unique"
 #469#  "Chemin de ROM 64DD IPL Japonaise:"
 #470#  "Chemin de ROM 64DD IPL Américaine:"
@@ -466,16 +466,16 @@
 /*********************************************************************************
 * Support Window                                                                 *
 *********************************************************************************/
-#1200#  "Support Project64"
-#1201#  "Project64 est un émulateur open source de Nintendo 64.\n\nCelui-ci vous permet de jouer à des jeux N64 comme vous le feriez avec la vraie console.\n\nJe suis désolé de vous déranger avec cet encart, mais merci à vous de patienter quelques secondes dans le but d'apprécier le résultat de centaines d'heures de travail.\n\nSi vous le pouvez et le désirez soutenir Project64 ou en avez tiré quelque chose de son usage, merci de soutenir le projet soit avec de simples remerciments, ou votre volonter de supprimer cet encartn\n\nSi vous avez soutenu Project64 :"
+#1200#  "Support Swervito64"
+#1201#  "Swervito64 est un émulateur open source de Nintendo 64.\n\nCelui-ci vous permet de jouer à des jeux N64 comme vous le feriez avec la vraie console.\n\nJe suis désolé de vous déranger avec cet encart, mais merci à vous de patienter quelques secondes dans le but d'apprécier le résultat de centaines d'heures de travail.\n\nSi vous le pouvez et le désirez soutenir Swervito64 ou en avez tiré quelque chose de son usage, merci de soutenir le projet soit avec de simples remerciments, ou votre volonter de supprimer cet encartn\n\nSi vous avez soutenu Swervito64 :"
 #1202#  "Entrer/Demander un Code de Soutien"
-#1203#  "Soutenir Project64"
+#1203#  "Soutenir Swervito64"
 #1204#  "Continuer"
 #1205#  "Veuillez entrer le Code de Soutien"
 #1206#  "Échec de validation du Code. Assurez-vous que le code que vous avez reçu corresponde à celui de votre appareil."
 #1207#  "Remerciements"
 #1208#  "Entrez un Code"
-#1209#  "Veuillez entrer le code se trouvant dans l'email.\n\nL'email sera envoyé à l'adresse utilisée pour soutenir Project64.\n\nVeuillez noter que ce code ne fonctionnera que pour un seul appareil. L'ID de cet appareil est :"
+#1209#  "Veuillez entrer le code se trouvant dans l'email.\n\nL'email sera envoyé à l'adresse utilisée pour soutenir Swervito64.\n\nVeuillez noter que ce code ne fonctionnera que pour un seul appareil. L'ID de cet appareil est :"
 #1210#  "OK"
 #1211#  "Annuler"
 #1212#  "Demander un code"
@@ -513,7 +513,7 @@
 #2025#  "Erreur"
 #2026#  "La séquence de copyright n’a pas été trouvée dans la LUT. Le jeu ne fonctionnera plus."
 #2027#  "Échec de la protection de copie"
-#2028#  "Changer un plugin nécessite que Project64 redémarre la ROM lancée.\nSi vous ne voulez pas perdre votre progression, répondez non et sauvegardez.\n\nChanger les plugins et redémarrer maintenant ?"
+#2028#  "Changer un plugin nécessite que Swervito64 redémarre la ROM lancée.\nSi vous ne voulez pas perdre votre progression, répondez non et sauvegardez.\n\nChanger les plugins et redémarrer maintenant ?"
 #2029#  "Changer les plugins"
 #2030#  "Émulation arrêtée"
 #2031#  "Émulation démarrée"
@@ -536,7 +536,7 @@
 #2048#  "Le raccourci a déjà été assigné à une autre entrée de menu."
 #2049#  "Aucun raccourci n’a été sélectionné pour être supprimé."
 #2050#  "ROM chargée. Émulation en attente de lancement."
-#2051#  "Project64 beta est réservé aux membres seulement.\n\nSi vous avez un compte sur pj64-emu.com, vous ne devriez pas voir cette erreur !!\nVeuillez nous contacter sur le site."
+#2051#  "Swervito64 beta est réservé aux membres seulement.\n\nSi vous avez un compte sur pj64-emu.com, vous ne devriez pas voir cette erreur !!\nVeuillez nous contacter sur le site."
 #2052#  "Erreur du programme"
 #2053#  "Impossible de trouver le nom de fichier dans l’archive 7z"
 #2054#  "Émulation des graphismes bas niveau (LLE)"
@@ -569,11 +569,11 @@
 #3013#  "OK"
 #3014#  "Annuler"
 #3015#  "Information"
-#3016#  "Project64 pour Android"
+#3016#  "Swervito64 pour Android"
 #3017#  "Licence"
 #3018#  "Révision"
-#3019#  "Project64 pour Android\u2122 est un portage de la version Windows de Project64. La version Android\u2122 peut lancer la plupart des jeux N64."
-#3020#  "Auteurs de Project64."
+#3019#  "Swervito64 pour Android\u2122 est un portage de la version Windows de Swervito64. La version Android\u2122 peut lancer la plupart des jeux N64."
+#3020#  "Auteurs de Swervito64."
 #3021#  "Discord"
 
 //In game menu

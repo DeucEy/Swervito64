@@ -1,7 +1,7 @@
 #include "jniBridgeSettings.h"
 #include "UISettings.h"
-#include <Project64-core/Settings.h>
-#include <Project64-video/SettingsID.h>
+#include <Swervito64-core/Settings.h>
+#include <Swervito64-video/SettingsID.h>
 #ifdef ANDROID
 #include <android/log.h>
 #endif

@@ -12,7 +12,7 @@ if "%zip%" == "" (
 	)
 )
 
-set ZipFileName=project64
+set ZipFileName=Swervito64
 set VSPlatform=win32
 if not "%1" == "" set ZipFileName=%1
 if not "%2" == "" set VSPlatform=%2
@@ -47,21 +47,21 @@ md "%base_dir%\Bin\Package\Plugin\GFX\GLideN64\translations"
 copy "%base_dir%\Plugin\%VSPlatform%\GFX\GLideN64\translations\*.Lang" "%base_dir%\Bin\Package\Plugin\GFX\GLideN64\translations"
 )
 
-copy "%base_dir%\Bin\%VSPlatform%\Release\Project64.exe" "%base_dir%\Bin\Package"
+copy "%base_dir%\Bin\%VSPlatform%\Release\Swervito64.exe" "%base_dir%\Bin\Package"
 copy "%base_dir%\Config\Video.rdb" "%base_dir%\Bin\Package\Config"
 copy "%base_dir%\Config\Audio.rdb" "%base_dir%\Bin\Package\Config"
 copy "%base_dir%\Config\Cheats\*.cht" "%base_dir%\Bin\Package\Config\Cheats"
 copy "%base_dir%\Config\Enhancements\*.enh" "%base_dir%\Bin\Package\Config\Enhancements"
-copy "%base_dir%\Config\Project64.rdb" "%base_dir%\Bin\Package\Config"
-copy "%base_dir%\Config\Project64.rdx" "%base_dir%\Bin\Package\Config"
+copy "%base_dir%\Config\Swervito64.rdb" "%base_dir%\Bin\Package\Config"
+copy "%base_dir%\Config\Swervito64.rdx" "%base_dir%\Bin\Package\Config"
 copy "%base_dir%\Lang\*.pj.Lang" "%base_dir%\Bin\Package\Lang"
 copy "%base_dir%\Plugin\%VSPlatform%\Audio\Jabo_Dsound.dll" "%base_dir%\Bin\Package\Plugin\Audio"
-copy "%base_dir%\Plugin\%VSPlatform%\Audio\Project64-Audio.dll" "%base_dir%\Bin\Package\Plugin\Audio"
+copy "%base_dir%\Plugin\%VSPlatform%\Audio\Swervito64-Audio.dll" "%base_dir%\Bin\Package\Plugin\Audio"
 copy "%base_dir%\Plugin\%VSPlatform%\GFX\Jabo_Direct3D8.dll" "%base_dir%\Bin\Package\Plugin\GFX"
-copy "%base_dir%\Plugin\%VSPlatform%\GFX\Project64-Video.dll" "%base_dir%\Bin\Package\Plugin\GFX"
+copy "%base_dir%\Plugin\%VSPlatform%\GFX\Swervito64-Video.dll" "%base_dir%\Bin\Package\Plugin\GFX"
 copy "%base_dir%\Plugin\%VSPlatform%\Input\PJ64_NRage.dll" "%base_dir%\Bin\Package\Plugin\Input"
-copy "%base_dir%\Plugin\%VSPlatform%\Input\Project64-Input.dll" "%base_dir%\Bin\Package\Plugin\Input"
-copy "%base_dir%\Plugin\%VSPlatform%\RSP\Project64-RSP.dll" "%base_dir%\Bin\Package\Plugin\RSP"
+copy "%base_dir%\Plugin\%VSPlatform%\Input\Swervito64-Input.dll" "%base_dir%\Bin\Package\Plugin\Input"
+copy "%base_dir%\Plugin\%VSPlatform%\RSP\Swervito64-RSP.dll" "%base_dir%\Bin\Package\Plugin\RSP"
 
 cd %base_dir%\Bin\Package
 "%zip%" a -tzip -r "%base_dir%\Package\%ZipFileName%" *

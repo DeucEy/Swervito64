@@ -57,9 +57,9 @@
 
 // Help menu
 #180#  "&Ayuda"
-#182#  "&Acerca de Project64"
+#182#  "&Acerca de Swervito64"
 #184#  "&Sitio Web"
-#185#  "&Apoya a Project64"
+#185#  "&Apoya a Swervito64"
 #186#  "&Discord"
 
 // Current save slot menu
@@ -221,7 +221,7 @@
 #464#  "Desactivar protector de pantalla cuando se esté ejecutando una ROM"
 #465#  "Mostrar velocidad"
 #466#  "Velocidad de la pantalla:"
-#467#  "Comprobar si Project64 ya está ejecutándose"
+#467#  "Comprobar si Swervito64 ya está ejecutándose"
 #468#  "Almacenar guardados de juego en carpetas separadas"
 #469#  "Ruta de ROM IPL 64DD venta Japonesa:"
 #470#  "Ruta de ROM IPL 64DD venta Americana:"
@@ -444,21 +444,21 @@
 
 /*** Support window ***/
 
-#1200#  "Apoya a Project64"
-#1201#  "Project64 es un emulador de la Nintendo 64 gratuito y de código abierto.\n\nEste te permite reproducir software real de N64 de la misma manera como lo sería en la consola original.\n\nLamento el inconveniente de este mensaje, pero te pido que esperes unos segundos para disfrutar del resultado de cientos de horas de esfuerzo.\n\nSi puedes y quieres apoyar a Project64 o has obtenido algún valor de éste, entonces por favor apoya a Project64 ya sea como muestra de agradecimiento, o tu deseo de quitar este mensaje.\n\nSi has apoyado a Project64:"
+#1200#  "Apoya a Swervito64"
+#1201#  "Swervito64 es un emulador de la Nintendo 64 gratuito y de código abierto.\n\nEste te permite reproducir software real de N64 de la misma manera como lo sería en la consola original.\n\nLamento el inconveniente de este mensaje, pero te pido que esperes unos segundos para disfrutar del resultado de cientos de horas de esfuerzo.\n\nSi puedes y quieres apoyar a Swervito64 o has obtenido algún valor de éste, entonces por favor apoya a Swervito64 ya sea como muestra de agradecimiento, o tu deseo de quitar este mensaje.\n\nSi has apoyado a Swervito64:"
 #1202#  "Introduce/Solicita el Código de Apoyo"
-#1203#  "Apoya a Project64"
+#1203#  "Apoya a Swervito64"
 #1204#  "Continuar"
 #1205#  "Por favor introduce el código de apoyo"
 #1206#  "Error al validar el código.\n\nAsegúrate que el código en el correo coincida con el correspondiente a tu dispositivo."
 #1207#  "Gracias"
 #1208#  "Por favor introduce tu código de apoyo"
-#1209#  "Por favor introduce el código que recibiste en tu correo.\n\nEl correo será enviado a la cuenta usada para apoyar a Project64.\n\nPor favor ten en cuenta que el código solo funcionará para una único dispositivo. El ID de este dispositivo es:"
+#1209#  "Por favor introduce el código que recibiste en tu correo.\n\nEl correo será enviado a la cuenta usada para apoyar a Swervito64.\n\nPor favor ten en cuenta que el código solo funcionará para una único dispositivo. El ID de este dispositivo es:"
 #1210#  "Aceptar"
 #1211#  "Cancelar"
 #1212#  "Solicitar código"
 #1213#  "El código fue enviado a tu correo"
-#1214#  "Fallo al enviar código, por favor asegúrate que este sea el correo con el que apoyaste a Project64"
+#1214#  "Fallo al enviar código, por favor asegúrate que este sea el correo con el que apoyaste a Swervito64"
 
 /*** Enhancements ***/
 
@@ -494,7 +494,7 @@
 #2025#  "Error"
 #2026#  "Secuencia de copyright no encontrada en el LUT. El juego ya no funcionará."
 #2027#  "Falla en la protección de copia"
-#2028#  "Cambiar un complemento requiere que Project64 reinicie una ROM en ejecución.\nSi no quieres perder tu posición, responde No y guarda el estado actual primero.\n\n¿Cambiar complementos y reiniciar la ROM ahora?"
+#2028#  "Cambiar un complemento requiere que Swervito64 reinicie una ROM en ejecución.\nSi no quieres perder tu posición, responde No y guarda el estado actual primero.\n\n¿Cambiar complementos y reiniciar la ROM ahora?"
 #2029#  "Cambiar complementos"
 #2030#  "Emulación finalizada"
 #2031#  "Emulación iniciada"
@@ -517,7 +517,7 @@
 #2048#  "El acceso directo ya está asignado a otro elemento del menú."
 #2049#  "Ningún acceso directo ha sido seleccionado para ser removido."
 #2050#  "ROM cargada. Esperando por la emulación para iniciar."
-#2051#  "Las versiones beta de Project64 son sólo para miembros.\n\n¡¡Si tienes una cuenta en www.pj64-emu.com, no deberías estar viendo este error!!\nPor favor contacta con nosotros en el sitio."
+#2051#  "Las versiones beta de Swervito64 son sólo para miembros.\n\n¡¡Si tienes una cuenta en www.pj64-emu.com, no deberías estar viendo este error!!\nPor favor contacta con nosotros en el sitio."
 #2052#  "Error del programa"
 #2053#  "Fallo al encontrar el nombre de archivo en archivo 7z"
 #2054#  "Emulación de gráficos de bajo nivel"
@@ -553,11 +553,11 @@
 #3013#  "Aceptar"
 #3014#  "Cancelar"
 #3015#  "Información"
-#3016#  "Project64 para Android"
+#3016#  "Swervito64 para Android"
 #3017#  "Licencia"
 #3018#  "Revisión"
-#3019#  "Project64 para Android\u2122 está portado de la versión de windows de project64.La versión de Android\u2122 puede jugar la mayoría de los juegos de N64."
-#3020#  "Autores de Project64."
+#3019#  "Swervito64 para Android\u2122 está portado de la versión de windows de Swervito64.La versión de Android\u2122 puede jugar la mayoría de los juegos de N64."
+#3020#  "Autores de Swervito64."
 #3021#  "Discord"
 
 // In-game menu

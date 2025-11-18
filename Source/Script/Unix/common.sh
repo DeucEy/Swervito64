@@ -16,7 +16,7 @@ C_FLAGS=$FLAGS_x86
 CC=g++
 AS=as
 
-echo Compiling common library sources for Project64...
+echo Compiling common library sources for Swervito64...
 $CC -o $obj/CriticalSection.asm         $src/CriticalSection.cpp $C_FLAGS
 $CC -o $obj/FileClass.asm               $src/FileClass.cpp $C_FLAGS
 $CC -o $obj/IniFileClass.asm            $src/IniFileClass.cpp $C_FLAGS

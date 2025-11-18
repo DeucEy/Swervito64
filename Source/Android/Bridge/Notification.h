@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Project64-core/Notification.h>
+#include <Swervito64-core/Notification.h>
 
 class CNotificationImp :
     public CNotification

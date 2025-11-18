@@ -6,7 +6,7 @@ End if
 
 sub ShowUsage()
     WScript.StdOut.WriteLine "incorrect parameters"
-    WScript.StdOut.WriteLine "[GlideN64ProjectUrl] [GlideN64 Workspacedir] [Project64 plugindir]"
+    WScript.StdOut.WriteLine "[GlideN64ProjectUrl] [GlideN64 Workspacedir] [Swervito64 plugindir]"
     WScript.Quit 1
 end sub
 

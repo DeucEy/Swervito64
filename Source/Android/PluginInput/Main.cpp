@@ -1,4 +1,4 @@
-#include <Project64-plugin-spec/Input.h>
+#include <Swervito64-plugin-spec/Input.h>
 #include "Version.h"
 #include <stdio.h>
 #include <string.h>
@@ -206,7 +206,7 @@ EXPORT void CALL PluginLoaded(void)
 }
 
 #ifdef ANDROID
-EXPORT void CALL Java_emu_project64_jni_NativeInput_setState(JNIEnv* env, jclass jcls, jint controllerNum, jbooleanArray Buttons, jint pXAxis, jint pYAxis)
+EXPORT void CALL Java_emu_Swervito64_jni_NativeInput_setState(JNIEnv* env, jclass jcls, jint controllerNum, jbooleanArray Buttons, jint pXAxis, jint pYAxis)
 {
     jboolean* elements = env->GetBooleanArrayElements(Buttons, NULL);
     if (controllerNum == 0)

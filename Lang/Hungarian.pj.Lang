@@ -363,7 +363,7 @@ Ellenõrizd, hogy legyen legalább egy kompatibilis plugin fájl a plugin könyv
 Ellenõrizd, hogy legyen legalább egy kompatibilis plugin fájl a plugin könyvtárban."
 #2006#  "Alap- vagy választott RSP plugin hiányzik illetve nem megfelelõ.
 
-Ellenõrizd, hogy a Project64 megfelelõen van telepítve meglévõ plugin könyvtár megadásával."
+Ellenõrizd, hogy a Swervito64 megfelelõen van telepítve meglévõ plugin könyvtár megadásával."
 #2007#  "Alap- vagy választott irányítás plugin hiányzik illetve nem megfelelõ.
 
 Ellenõrizd, hogy legyen legalább egy kompatibilis plugin fájl a plugin könyvtárban."
@@ -404,7 +404,7 @@ Biztos folytatod a mentés betöltését?"
 #2025#  "Hiba"
 #2026#  "Jogvédelmi utalás nem található a LUT-ban.  A játék többé nem fog mûködni."
 #2027#  "Másolás védelmi probléma"
-#2028#  "Plugin váltáshoz a Project64-nek le kell nullázni a futó ROM-ot.
+#2028#  "Plugin váltáshoz a Swervito64-nek le kell nullázni a futó ROM-ot.
 Ha nem akarod elveszíteni a helyzeted, válassz NEM-et és ments állást.
 
 Váltasz plugint és újraindítod a játékot most?"
