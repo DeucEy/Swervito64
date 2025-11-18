@@ -3,6 +3,7 @@
 
 #include <Swervito64-rsp-core/Recompiler/asmjit.h>
 #include <map>
+#include <string>
 
 class RspAssembler :
     public asmjit::x86::Assembler,
