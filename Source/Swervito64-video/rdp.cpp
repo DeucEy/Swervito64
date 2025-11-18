@@ -501,7 +501,7 @@ void microcheck()
         if (g_ucode_error_report)
         {
             ReleaseGfx();
-            WriteTrace(TraceGlide64, TraceError, "uCode crc not found in INI, using currently selected uCode %08lx", (unsigned long)uc_crc);
+            WriteTrace(TraceGlide64, TraceError, "uCode crc not found in INI, using currently selected uCode %08lx", (unsigned long)uc_crc); //csmith fix
             g_Notify->DisplayError(stdstr_f("Error: uCode crc not found in INI, using currently selected uCode\n\n%08lx", uc_crc).c_str());
             g_ucode_error_report = false; // don't report any more ucode errors from this game
         }

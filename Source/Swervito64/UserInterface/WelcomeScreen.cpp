@@ -55,7 +55,7 @@ LRESULT WelcomeScreen::OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*l
     {
         LangCB.SetCurSel(0);
     }
-    CButton(GetDlgItem(IDC_RADIO_GLIDEN64)).SetCheck(BST_CHECKED);
+    CButton(GetDlgItem(IDC_RADIO_PJ64_VIDEO)).SetCheck(BST_CHECKED);
     return TRUE;
 }
 
@@ -110,7 +110,7 @@ LRESULT WelcomeScreen::OnOkCmd(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCt
     {
         Swervito64VideoPluginPath = "GFX\\Swervito64-Video.dll";
     }
-    g_Settings->SaveString(Plugin_GFX_Default, CButton(GetDlgItem(IDC_RADIO_GLIDEN64)).GetCheck() == BST_CHECKED ? "GFX\\GLideN64\\GLideN64.dll" : Swervito64VideoPluginPath);
+    g_Settings->SaveString(Plugin_GFX_Default, Swervito64VideoPluginPath);
     g_Settings->SaveString(Plugin_GFX_Current, g_Settings->LoadStringVal(Plugin_GFX_Default));
     EndDialog(0);
     return TRUE;

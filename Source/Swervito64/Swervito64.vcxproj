@@ -34,6 +34,9 @@
   <PropertyGroup>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ExtensionsToDeleteOnClean>*.dll;*.pj.Lang;$(ExtensionsToDeleteOnClean)</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
   <ItemDefinitionGroup>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -54,6 +57,7 @@
     </ClCompile>
     <PostBuildEvent>
       <Command Condition="'$(Configuration)'=='Release'">"$(SolutionDir)\Source\Script\clang.cmd" check</Command>
+      <Command>"$(SolutionDir)\Source\Script\copy_build_structure.cmd" $(Configuration) $(Platform)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

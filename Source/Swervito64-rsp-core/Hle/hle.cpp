@@ -97,7 +97,7 @@ Try to figure if the RSP was launched using osSpTask* functions
 and not run directly (in which case DMEM[0xfc0-0xfff] is meaningless).
 
 Previously, the ucode_size field was used to determine this,
-but it is not robust enough (hi Pok�mon Stadium!) because games could write anything
+but it is not robust enough (hi Pokemon Stadium!) because games could write anything
 in this field: most ucode_boot discard the value and just use 0xf7f anyway.
 
 Using ucode_boot_size should be more robust in this regard.
@@ -157,13 +157,13 @@ bool CHle::try_fast_audio_dispatching(void)
             case 0x1f08122c: // Yoshi's Story
                 alist_process_nead_ys(this);
                 return true;
-            case 0x1f38122c: // 1080� Snowboarding
+            case 0x1f38122c: // 1080 Snowboarding
                 alist_process_nead_1080(this);
                 return true;
             case 0x1f681230: // Zelda Ocarina of Time / Zelda Majora's Mask (J, J Rev A)
                 alist_process_nead_oot(this);
                 return true;
-            case 0x1f801250: // Zelda Majora's Mask (except J, J Rev A, E Beta), Pok�mon Stadium 2
+            case 0x1f801250: // Zelda Majora's Mask (except J, J Rev A, E Beta), Pokemon Stadium 2
                 alist_process_nead_mm(this);
                 return true;
             case 0x109411f8: // Zelda Majora's Mask (E Beta)
@@ -234,12 +234,12 @@ void CHle::normal_task_dispatching(void)
         }
         break;
 
-        // JPEG: found in Pok�mon Stadium J
+        // JPEG: found in Pokemon Stadium J
     case 0x2c85a:
         jpeg_decode_PS0(this);
         return;
 
-        // JPEG: found in Zelda Ocarina of Time, Pok�mon Stadium 1, Pok�mon Stadium 2
+        // JPEG: found in Zelda Ocarina of Time, Pokemon Stadium 1, Pokemon Stadium 2
     case 0x2caa6:
         jpeg_decode_PS(this);
         return;

@@ -852,7 +852,6 @@
 #define IDC_OK                          1723
 #define IDC_CANCEL                      1724
 #define IDC_APPLY                       1725
-#define IDC_RADIO_GLIDEN64              1728
 #define IDC_RADIO_PJ64_VIDEO            1729
 #define IDC_REMOVE_BTN                  1734
 #define IDC_ADD_BTN                     1735

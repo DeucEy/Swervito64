@@ -35,7 +35,6 @@ Source: "{#BaseDir}\Plugin\{#Platform}\Audio\Jabo_Dsound.dll"; DestDir: "{app}\P
 Source: "{#BaseDir}\Plugin\{#Platform}\Audio\Swervito64-Audio.dll"; DestDir: "{app}\Plugin\Audio"
 Source: "{#BaseDir}\Plugin\{#Platform}\GFX\Jabo_Direct3D8.dll"; DestDir: "{app}\Plugin\GFX"
 Source: "{#BaseDir}\Plugin\{#Platform}\GFX\Swervito64-Video.dll"; DestDir: "{app}\Plugin\GFX"
-Source: "{#BaseDir}\Plugin\{#Platform}\GFX\GLideN64\*"; DestDir: "{app}\Plugin\GFX\GLideN64"; Flags: recursesubdirs
 Source: "{#BaseDir}\Plugin\{#Platform}\Input\PJ64_NRage.dll"; DestDir: "{app}\Plugin\Input"
 Source: "{#BaseDir}\Plugin\{#Platform}\Input\Swervito64-Input.dll"; DestDir: "{app}\Plugin\Input"
 Source: "{#BaseDir}\Plugin\{#Platform}\RSP\Swervito64-RSP.dll"; DestDir: "{app}\Plugin\RSP"
@@ -50,7 +49,6 @@ Name: "{app}\Logs"; Permissions: everyone-full
 Name: "{app}\Save"; Permissions: everyone-full
 Name: "{app}\Screenshots"; Permissions: everyone-full
 Name: "{app}\Textures"; Permissions: everyone-full
-Name: "{app}\Plugin\GFX\GLideN64"; Permissions: everyone-full
 
 [Icons]
 Name: "{commondesktop}\Swervito64"; Filename: "{app}\Swervito64.exe"; Tasks: desktopicon
