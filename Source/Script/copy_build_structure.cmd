@@ -28,6 +28,9 @@ xcopy "%rootDir%\Lang" "%buildDir%\Lang" /E /I /Y /D
 echo Copying Plugins...
 xcopy "%rootDir%\Plugin\%Platform%" "%buildDir%\Plugin" /E /I /Y /D
 
+echo Copying Config Artifacts (Rom Database, Cheats, etc)...
+xcopy "%rootDir%\Config" "%buildDir%\Config" /E /I /Y /D
+
 :end
 ENDLOCAL
 exit /B 0
