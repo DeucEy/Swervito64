@@ -4,14 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <emu.project64.game.GameSurface
+    <emu.Swervito64.game.GameSurface
         android:id="@+id/gameSurface"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:focusable="false"
         android:focusableInTouchMode="false" />
 
-    <emu.project64.game.GameOverlay
+    <emu.Swervito64.game.GameOverlay
         android:id="@+id/gameOverlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

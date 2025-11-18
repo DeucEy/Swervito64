@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Project64-rsp.rc">
+    <ResourceCompile Include="Swervito64-rsp.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>

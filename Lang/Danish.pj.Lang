@@ -13,12 +13,12 @@
 #7  #  "Version"
 #8  #  "Dato"
 #9  #  "Programmørens Hjemmeside"
-#10 #  "spil Database (Project64.rdb)"
-#11 #  "Snyde kode fil (Project64.cht)"
-#12 #  "Udvidet spil Information (Project64.rdx)"
+#10 #  "spil Database (Swervito64.rdb)"
+#11 #  "Snyde kode fil (Swervito64.cht)"
+#12 #  "Udvidet spil Information (Swervito64.rdx)"
 
 //About INI titel
-#20 #  "Project64 anvender nu:"
+#20 #  "Swervito64 anvender nu:"
 
 /*********************************************************************************
 * Menu                                                                           *
@@ -70,7 +70,7 @@
 //Help Menu
 #180#  "&Hjælp"
 #181#  "Om &INI filer"
-#182#  "&Om Project64"
+#182#  "&Om Swervito64"
 
 //Current Save Slot menu
 #190#  "&Standard Spilstadiestadie (.pj)"
@@ -98,32 +98,32 @@
 #253#  "Stop spillet og vend tilbage til Søg"
 #254#  "Skift søgemaskinens spil folder"
 #255#  "Updater søgevinduet for at vise ændringer i spil folderen"
-#256#  "Afslut Project64"
+#256#  "Afslut Swervito64"
 #257#  "Genstart spillet og lad alle indstillings ændringer træde i kraft"
 #258#  "Paus/Genoptag spillet med den anvendte spil-fil"
 #259#  "lav et billede ved hjælp af video udvidelsen"
 #260#  "Begræns VI/s til den korrekte hastighed for spillets region"
-#261#  "Gem Project64 stadie til det nuværende arkiv"
-#262#  "Gem Project64 stadie til et hvilket som helst filnavn og sted"
-#263#  "Hent Project64 stadie fra nuværende arkiv"
-#264#  "Hent Project64 state fra et hvilket som helst filnavn og sted"
+#261#  "Gem Swervito64 stadie til det nuværende arkiv"
+#262#  "Gem Swervito64 stadie til et hvilket som helst filnavn og sted"
+#263#  "Hent Swervito64 stadie fra nuværende arkiv"
+#264#  "Hent Swervito64 state fra et hvilket som helst filnavn og sted"
 #265#  "Vælg og brug snyde-koder til det anvendte spil"
 #266#  "Efterlign et tryk på GameShark knappen - til brug for nogle snyde-koder"
 #267#  "Skift fra vindue-tilstand til fuld skærm (Tryk på Esc for at vende tilbage!)"
-#268#  "Vis Project64 vindue foran andre åbne vinduer"
+#268#  "Vis Swervito64 vindue foran andre åbne vinduer"
 #269#  "Skift den valgte video (grafik) udvidelse"
 #270#  "Skift den valgte Audio (lyd) udvidelse"
 #271#  "Skift den valgte Indput (Kontroller) udvidelse"
 #272#  "Skift RSP udvidelsen"
 #273#  "Vis/skjul system CPU brug delt mellem emulator komponenter"
-#274#  "Project64 hoved indstillinger (indsats valg etc.)"
-#275#  "Åben brugervejledningen til Project64"
-#276#  "Åben Project64 spil-specifik hjælp"
+#274#  "Swervito64 hoved indstillinger (indsats valg etc.)"
+#275#  "Åben brugervejledningen til Swervito64"
+#276#  "Åben Swervito64 spil-specifik hjælp"
 #277#  "Om Programmørerne"
 #278#  "Om programmørerne af hjælpefilerne"
 #279#  "Hent senest hentede spil"
 #280#  "Indstil søger til denne folder"
-#281#  "Skift Project64 GUI til et andet sprog"
+#281#  "Skift Swervito64 GUI til et andet sprog"
 #282#  "Skift til et andet gem spilstadie arkiv"
 #283#  "Hent og start det valgte spil"
 #284#  "Vis information om det hentede spil"
@@ -163,7 +163,7 @@
 * Options                                                                        *
 *********************************************************************************/
 //Options Title
-#400#  "Project64 Indstillinger"
+#400#  "Swervito64 Indstillinger"
 
 //Tabs
 #401#  "Indsats"
@@ -186,13 +186,13 @@
 #440#  "&Udvidelses folder"
 #441#  "&Spil folder"
 #442#  "Standard N64 &gemme folder"
-#443#  "Project64 spils&tadie gemme folder"
+#443#  "Swervito64 spils&tadie gemme folder"
 #444#  "&Billede folder"
 #445#  "Husk den sidste folder hvorfra et spil blev hentet"
 #446#  "Vælg en folder til udvidelser"
 #447#  "Vælg en folder til spil"
 #448#  "vælg en folder til standard N64 gemte spil"
-#449#  "Vælg en folder til gemte Project64 spilstadier"
+#449#  "Vælg en folder til gemte Swervito64 spilstadier"
 #450#  "Vælg den folder hvor video udvidelsen skal gemme spil billeder"
 
 //Options Dialog
@@ -269,7 +269,7 @@
 #624#  "128kbyte FlashRAM"
 
 //Shell Intergration Tab
-#640#  "Filer der skal forbindes med Project64"
+#640#  "Filer der skal forbindes med Swervito64"
 
 //ROM Notes
 #660#  "Status:"

@@ -9,7 +9,7 @@ cd /d %origdir%
 for /f %%i in ('git rev-parse --short HEAD') do set GIT_REVISION_SHORT=%%i > nul
 for /f %%i in ('git rev-list --count HEAD') do set GIT_BUILD_VERSION=%%i > nul
 
-for /F "tokens=1,2,3" %%i in (%base_dir%\Source\Project64-core\version.h.in) do call :process_version %%i %%j %%k
+for /F "tokens=1,2,3" %%i in (%base_dir%\Source\Swervito64-core\version.h.in) do call :process_version %%i %%j %%k
 set GIT_REVISION_SHORT=%GIT_REVISION_SHORT: =%
 set GIT_BUILD_VERSION=%GIT_BUILD_VERSION: =%
 set VERSION=%VERSION_PREFIX%%VERSION_MAJOR%.%VERSION_MINOR%.%VERSION_REVISION%-%GIT_BUILD_VERSION%-%GIT_REVISION_SHORT%

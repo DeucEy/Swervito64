@@ -100,7 +100,7 @@
 #253#  "Zakończ emulację załadowanego obrazu gry"
 #254#  "Wybierz folder docelowy romów"
 #255#  "Odśwież listę w przeglądarce romów"
-#256#  "Zamknij Project64"
+#256#  "Zamknij Swervito64"
 #257#  "Przeładuj aktualny plik romu (przeładuj wszystkie ustawienia)"
 #258#  "Zatrzymaj/ponów emulację aktualnie wybranego romu"
 #259#  "Generuj zrzut ekranowy wyświetlanego obrazu"
@@ -118,14 +118,14 @@
 #271#  "Zmień ustawienia wewnętrzne pluginu kontrolera (n.p. konfiguracja sterowania)"
 #272#  "Zmień ustawienia wewnętrzne pluginu RSP"
 #273#  "Pokaż zużycie CPU przez emulator (z pominięciem innych zasobów)"
-#274#  "Pokaż/zmień ustawienia Project64"
-#275#  "Pokaż podręcznik użytkownika Project64"
-#276#  "Pokaż FAQ Project64"
-#278#  "O Project64 i jego autorach"
+#274#  "Pokaż/zmień ustawienia Swervito64"
+#275#  "Pokaż podręcznik użytkownika Swervito64"
+#276#  "Pokaż FAQ Swervito64"
+#278#  "O Swervito64 i jego autorach"
 #277#  "O autorach plików serwisowych"
 #279#  "Otwórz ten ROM"
 #280#  "Wybierz ten folder jako folder romów"
-#281#  "Wybierz język dla Project64"
+#281#  "Wybierz język dla Swervito64"
 #282#  "Wybierz lokalizację dla szybkiego zapisu"
 #283#  "Uruchom wybranę grę"
 #284#  "Informacje o wybranej grze"
@@ -199,7 +199,7 @@
 #450#  "Wybierz folder dla zrzutów ekranowych"
 
 //Options Dialog
-#460#  "Zatrzymaj emulację kiedy okno Project64 jest nieaktywne"
+#460#  "Zatrzymaj emulację kiedy okno Swervito64 jest nieaktywne"
 #461#  "Po załadowaniu romu przejdź do trybu pełnśkranowego"
 #462#  "Ukryj zaawansowane opcje"
 #463#  "Zapamiętaj wybrane kody"
@@ -273,7 +273,7 @@
 #624#  "Flash RAM"
 
 //Shell Integration Tab
-#640#  "Powiąż Project64 z:"
+#640#  "Powiąż Swervito64 z:"
 
 //ROM Notes
 #660#  "Status romu:"
@@ -363,7 +363,7 @@ Sprawdź czy wszystkie pluginy w folderze pluginów są kompatybilne."
 Sprawdź czy wszystkie pluginy w folderze pluginów są kompatybilne."
 #2006#  "Domyślny lub wybrany plugin RSP jest nieodpowieni lub nie został wybrany.
 
-Sprawdź czy Project64 ma wprowadzoną odpowienią ścieżkę do folderu pluginów."
+Sprawdź czy Swervito64 ma wprowadzoną odpowienią ścieżkę do folderu pluginów."
 #2007#  "Domyślny lub wybrany plugin wejścia jest nieodpowieni lub nie został wybrany.
 
 Sprawdź czy wszystkie pluginy w folderze pluginów są kompatybilne."
@@ -404,7 +404,7 @@ Czy aby na pewno chcesz kontynuować ładowanie?"
 #2025#  "Błąd"
 #2026#  "Sekwencja praw autorskich nie jest dostępna w LUT.  Gra nie będzie działać."
 #2027#  "Uszkodzona kopia ochrony"
-#2028#  "Przy zmianie pluginu Project64 wymagany jest reset romu.
+#2028#  "Przy zmianie pluginu Swervito64 wymagany jest reset romu.
 Gdybyś nie chciał(a) stracić ukończonego stanu gry, odpowiedz Nie i wykonaj zapis.
 
 Zmienić pluginy i uruchomić ponownie grę?"

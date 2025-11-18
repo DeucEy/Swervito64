@@ -1,6 +1,6 @@
 name: Feature request
 description: >-
-  If you would like a new feature in Project64 or its default plugins, please
+  If you would like a new feature in Swervito64 or its default plugins, please
   open an issue here and fill out the template.
 title: '[Feature request]: '
 labels:
@@ -14,7 +14,7 @@ body:
     attributes: 
       label: Request box
       description: What feature would you like to see added?
-      placeholder: Tell us what you would like to see added to Project64!
+      placeholder: Tell us what you would like to see added to Swervito64!
       value: null
     validations: 
       required: true

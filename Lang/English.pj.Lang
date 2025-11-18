@@ -57,9 +57,9 @@
 
 // Help menu
 #180#  "&Help"
-#182#  "&About Project64"
+#182#  "&About Swervito64"
 #184#  "&Website"
-#185#  "&Support Project64"
+#185#  "&Support Swervito64"
 #186#  "&Discord"
 
 // Current save slot menu
@@ -221,7 +221,7 @@
 #464#  "Disable screensaver when running a ROM"
 #465#  "Display speed"
 #466#  "Speed display:"
-#467#  "Check if Project64 is already running"
+#467#  "Check if Swervito64 is already running"
 #468#  "Store game saves in separate folders"
 #469#  "Japanese retail 64DD IPL ROM path:"
 #470#  "American retail 64DD IPL ROM path:"
@@ -445,16 +445,16 @@
 
 /*** Support window ***/
 
-#1200#  "Support Project64"
-#1201#  "Project64 is a free and open source Nintendo 64 emulator.\n\nIt allows you to play real N64 software in much the same way as it would be on the original console.\n\nI am sorry about the inconvenience of this prompt, but you are being asked to wait for a few seconds in order to enjoy the result of hundreds of hours of work.\n\nIf you can and would like to support Project64 or you have gotten some value out of it then please support Project64 as either a thank you, or your desire to remove this prompt.\n\nIf you have supported Project64:"
+#1200#  "Support Swervito64"
+#1201#  "Swervito64 is a free and open source Nintendo 64 emulator.\n\nIt allows you to play real N64 software in much the same way as it would be on the original console.\n\nI am sorry about the inconvenience of this prompt, but you are being asked to wait for a few seconds in order to enjoy the result of hundreds of hours of work.\n\nIf you can and would like to support Swervito64 or you have gotten some value out of it then please support Swervito64 as either a thank you, or your desire to remove this prompt.\n\nIf you have supported Swervito64:"
 #1202#  "Enter/Request Support Code"
-#1203#  "Support Project64"
+#1203#  "Support Swervito64"
 #1204#  "Continue"
 #1205#  "Please enter the support code"
 #1206#  "Failed to validate the code\n\nMake sure the code in email matches based on your device"
 #1207#  "Thank you"
 #1208#  "Please enter your support code"
-#1209#  "Please enter the code you received in the email.\n\nThe email will be sent to the email address used to support Project64.\n\nPlease note that the code will only work for a unique device. This device's ID is:"
+#1209#  "Please enter the code you received in the email.\n\nThe email will be sent to the email address used to support Swervito64.\n\nPlease note that the code will only work for a unique device. This device's ID is:"
 #1210#  "OK"
 #1211#  "Cancel"
 #1212#  "Request Code"
@@ -495,7 +495,7 @@
 #2025#  "Error"
 #2026#  "Copyright sequence not found in LUT. Game will no longer function."
 #2027#  "Copy Protection Failure"
-#2028#  "Changing a plugin requires Project64 to reset a running ROM.\nIf you don't want to lose your place, answer No and save the current state first.\n\nChange plugins and reset ROM now?"
+#2028#  "Changing a plugin requires Swervito64 to reset a running ROM.\nIf you don't want to lose your place, answer No and save the current state first.\n\nChange plugins and reset ROM now?"
 #2029#  "Change Plugins"
 #2030#  "Emulation ended"
 #2031#  "Emulation started"
@@ -518,7 +518,7 @@
 #2048#  "Short-cut has already been assigned to another menu item."
 #2049#  "No shortcut has been selected to be removed."
 #2050#  "ROM loaded. Waiting for emulation to start."
-#2051#  "Project64 beta versions are for members only.\n\nIf you have an account at www.pj64-emu.com, you should not be seeing this error!!\nPlease contact us on the site."
+#2051#  "Swervito64 beta versions are for members only.\n\nIf you have an account at www.pj64-emu.com, you should not be seeing this error!!\nPlease contact us on the site."
 #2052#  "Program Error"
 #2053#  "Failed to find filename in 7z file"
 #2054#  "Graphics Low-Level Emulation"
@@ -554,11 +554,11 @@
 #3013#  "OK"
 #3014#  "Cancel"
 #3015#  "Information"
-#3016#  "Project64 for Android"
+#3016#  "Swervito64 for Android"
 #3017#  "License"
 #3018#  "Revision"
-#3019#  "Project64 for Android\u2122 is a port of the windows version of Project64.The Android\u2122 version can play most N64 games."
-#3020#  "Project64 Authors."
+#3019#  "Swervito64 for Android\u2122 is a port of the windows version of Swervito64.The Android\u2122 version can play most N64 games."
+#3020#  "Swervito64 Authors."
 #3021#  "Discord"
 
 // In-game menu

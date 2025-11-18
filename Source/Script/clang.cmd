@@ -7,20 +7,20 @@ set base_dir=%cd%
 cd /d %origdir%
 
 set ScanDir[0]="%base_dir%\Source\Common"
-set ScanDir[1]="%base_dir%\Source\Project64"
-set ScanDir[2]="%base_dir%\Source\Project64-core"
-set ScanDir[3]="%base_dir%\Source\Project64-rsp"
-set ScanDir[4]="%base_dir%\Source\Project64-rsp-core"
+set ScanDir[1]="%base_dir%\Source\Swervito64"
+set ScanDir[2]="%base_dir%\Source\Swervito64-core"
+set ScanDir[3]="%base_dir%\Source\Swervito64-rsp"
+set ScanDir[4]="%base_dir%\Source\Swervito64-rsp-core"
 set ScanDir[5]="%base_dir%\Source\Android\Bridge"
 set ScanDir[6]="%base_dir%\Source\Android\PluginRSP"
 
 set ScanFiles[0]="*.cpp"
 set ScanFiles[1]="*.h"
 
-set Exclude[0]="%base_dir%\Source\Project64-core\Version.h"
-set Exclude[1]="%base_dir%\Source\Project64\UserInterface\resource.h"
-set Exclude[2]="%base_dir%\Source\Project64-rsp-core\Version.h"
-set Exclude[3]="%base_dir%\Source\Project64-rsp\resource.h"
+set Exclude[0]="%base_dir%\Source\Swervito64-core\Version.h"
+set Exclude[1]="%base_dir%\Source\Swervito64\UserInterface\resource.h"
+set Exclude[2]="%base_dir%\Source\Swervito64-rsp-core\Version.h"
+set Exclude[3]="%base_dir%\Source\Swervito64-rsp\resource.h"
 
 set ValidParam=0
 if "%1" == "check" set ValidParam=1

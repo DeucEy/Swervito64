@@ -2,9 +2,9 @@
   <img src="./Docs/img/icon.png" alt="logo" width="200" />
 </p>
 
-# Project64
+# Swervito64
 
-Project64 is a free and open-source emulator for the Nintendo 64 and Nintendo 64 Disk Drive written in C++ currently only for Windows (planned support for other platforms in the future).
+Swervito64 is a free and open-source emulator for the Nintendo 64 and Nintendo 64 Disk Drive written in C++ currently only for Windows (planned support for other platforms in the future).
 
   * [Features](#features)
   * [Screenshot](#screenshot)
@@ -40,7 +40,7 @@ Installer for the latest stable releases are available [here](https://www.pj64-e
 Download nightly builds [here](https://www.pj64-emu.com/nightly-builds).
 
 AppVeyor (Windows x86/x64): [![Build status](https://ci.appveyor.com/api/projects/status/sbtwyhaexslyhgx3?svg=true
-)](https://ci.appveyor.com/project/project64/project64/branch/develop)
+)](https://ci.appveyor.com/project/Swervito64/Swervito64/branch/develop)
 
 *Side note: 64-bit builds are considered experimental and aren't currently supported*
 
@@ -54,7 +54,7 @@ AppVeyor (Windows x86/x64): [![Build status](https://ci.appveyor.com/api/project
   * 2GB or more
 * Graphics card
   * DirectX 8 capable (Jabo's Direct3D8)
-  * OpenGL 3.3 capable (Project64 Video)
+  * OpenGL 3.3 capable (Swervito64 Video)
   * OpenGL 3.3 capable (GLideN64)
   * OpenGL 3.3 capable (Angrylion's RDP Plus)
   * Vulkan 1.1 capable (Parallel-RDP)
@@ -85,18 +85,18 @@ If you would like to see a changelog that is available [here](./Docs/CHANGELOG.m
 
 Contributions are always welcome!
 
-If you want to contribute to this project, please click [here](https://github.com/project64/project64/blob/develop/Docs/BUILDING.md) to get more information on how to set up a local build environment.
+If you want to contribute to this project, please click [here](https://github.com/DeucEy/Swervito64/blob/develop/Docs/BUILDING.md) to get more information on how to set up a local build environment.
 
 See the [contributing](./.github/CONTRIBUTING.md) file for ways to get started.
 
 ## Maintainers and contributors
 
-- [@Project64](https://www.github.com/project64) - Zilmar - current maintainer
+- [@Swervito64](https://www.github.com/Swervito64) - Zilmar - current maintainer
 - Jabo - Previous contributor
 - Smiff - Previous contributor
 - Gent - Previous contributor
 
-Also see the list of [community contributors](https://github.com/project64/project64/contributors).
+Also see the list of [community contributors](https://github.com/DeucEy/Swervito64/contributors).
 
 ## Links
 - [Website](https://pj64-emu.com)
@@ -104,6 +104,6 @@ Also see the list of [community contributors](https://github.com/project64/proje
 
 ## License
 
-![GitHub](https://img.shields.io/github/license/project64/project64)
+![GitHub](https://img.shields.io/github/license/Swervito64/Swervito64)
 
 Please see the [license](./license.md) for more details.

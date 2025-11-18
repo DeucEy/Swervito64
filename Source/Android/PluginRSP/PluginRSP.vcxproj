@@ -32,8 +32,8 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <PropertyGroup>
-    <TargetName>Project64-RSP-Basic</TargetName>
-    <TargetName Condition="'$(Configuration)'=='Debug'">Project64-RSP-Basic_d</TargetName>
+    <TargetName>Swervito64-RSP-Basic</TargetName>
+    <TargetName Condition="'$(Configuration)'=='Debug'">Swervito64-RSP-Basic_d</TargetName>
     <OutDir>$(SolutionDir)Plugin\$(Platform)\RSP\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup>
@@ -54,7 +54,7 @@
     <ProjectReference Include="..\..\Common\Common.vcxproj">
       <Project>{b4a4b994-9111-42b1-93c2-6f1ca8bc4421}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Project64-rsp-core\Project64-rsp-core.vcxproj">
+    <ProjectReference Include="..\..\Swervito64-rsp-core\Swervito64-rsp-core.vcxproj">
       <Project>{7598f6b8-9da6-4897-b26f-f6865f824bf4}</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\Settings\Settings.vcxproj">
@@ -62,7 +62,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Project64-rsp.rc" />
+    <ResourceCompile Include="Swervito64-rsp.rc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />

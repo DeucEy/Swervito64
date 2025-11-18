@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:tag="unique_tag">
 
-    <emu.project64.settings.TwoLinesListPreference
+    <emu.Swervito64.settings.TwoLinesListPreference
         android:defaultValue="0"
         android:key="video_screenResolution"
         android:title="@string/screenResolution_title"

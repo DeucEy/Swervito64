@@ -1,5 +1,5 @@
-#include <Project64-rsp-core/RSPInfo.h>
-#include <Project64-rsp-core/Version.h>
+#include <Swervito64-rsp-core/RSPInfo.h>
+#include <Swervito64-rsp-core/Version.h>
 #include <Settings/Settings.h>
 #include <stdio.h>
 #include <string.h>

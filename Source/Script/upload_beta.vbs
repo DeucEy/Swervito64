@@ -23,8 +23,8 @@ sub ShowUsage()
     WScript.Quit 1
 end sub
 
-function Project64Url()
-    Project64Url = "https://www.pj64-emu.com"
+function Swervito64Url()
+    Swervito64Url = "https://www.pj64-emu.com"
 End Function
 
 sub CreateUploadTarget()
@@ -78,7 +78,7 @@ sub CreateUploadTarget()
                     next
 
                     if (Len(comment) > 0 and Len(commitId) > 0) then
-                        ProductDescription = ProductDescription & "[*]" & comment & " (commit: [URL=""https://github.com/project64/project64/commit/" & commitId & """]"& commitId & "[/URL])" & vbCrLf
+                        ProductDescription = ProductDescription & "[*]" & comment & " (commit: [URL=""https://github.com/DeucEy/Swervito64/commit/" & commitId & """]"& commitId & "[/URL])" & vbCrLf
                     end if
                 next
             end if
@@ -91,7 +91,7 @@ sub CreateUploadTarget()
     end if
             
     Dim url
-    url = Project64Url() + "/index.php"
+    url = Swervito64Url() + "/index.php"
 
     dim data
     data = "option=com_betafile"
@@ -157,7 +157,7 @@ sub UploadFile(FileToUpload)
     end if    
 
     Dim url
-    url = Project64Url() + "/index.php"
+    url = Swervito64Url() + "/index.php"
 
     dim fileContents
     fileContents = ReadBinaryFile(FileToUpload)

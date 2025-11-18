@@ -21,7 +21,7 @@ if %MSVC-BUILDER% == "" (
 )
 
 :: Build Win32 version of the software
-%MSVC-BUILDER% "%base_dir%\Project64.sln" /rebuild "%BuildMode%|Win32"
+%MSVC-BUILDER% "%base_dir%\Swervito64.sln" /rebuild "%BuildMode%|Win32"
 set Result=%ERRORLEVEL%
 echo Done - ERRORLEVEL: %Result%
 IF %Result% NEQ 0 goto :EndErr

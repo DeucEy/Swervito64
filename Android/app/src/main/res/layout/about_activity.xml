@@ -10,7 +10,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:theme="@style/Theme.Project64.ToolBar"
+        android:theme="@style/Theme.Swervito64.ToolBar"
         />
 	<com.google.android.material.tabs.TabLayout
 		android:id="@+id/sliding_tabs"

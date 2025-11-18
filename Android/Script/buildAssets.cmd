@@ -19,10 +19,10 @@ IF %ERRORLEVEL% NEQ 0 (exit /B 1)
 copy "%base_dir%\Config\Video.rdb" "%base_dir%\Android\assets\Config\"
 IF %ERRORLEVEL% NEQ 0 (exit /B 1)
 
-copy "%base_dir%\Config\Project64.rdb" "%base_dir%\Android\assets\Config\"
+copy "%base_dir%\Config\Swervito64.rdb" "%base_dir%\Android\assets\Config\"
 IF %ERRORLEVEL% NEQ 0 (exit /B 1)
 
-copy "%base_dir%\Config\Project64.rdx" "%base_dir%\Android\assets\Config\"
+copy "%base_dir%\Config\Swervito64.rdx" "%base_dir%\Android\assets\Config\"
 IF %ERRORLEVEL% NEQ 0 (exit /B 1)
 
 IF NOT EXIST "%base_dir%/Android/assets/Config/Cheats/" mkdir "%base_dir%/Android/assets/Config/Cheats/"

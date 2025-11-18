@@ -1,19 +1,19 @@
 #include "JavaBridge.h"
 #include "jniBridge.h"
 #include <Common/Trace.h>
-#include <Project64-core/TraceModulesProject64.h>
+#include <Swervito64-core/TraceModulesSwervito64.h>
 
 #ifdef ANDROID
 JavaBridge::JavaBridge(JavaVM * vm) :
     m_vm(vm)
 {
     JNIEnv * env = Android_JNI_GetEnv();
-    jclass GalleryActivityClass = env->FindClass("emu/project64/GalleryActivity");
+    jclass GalleryActivityClass = env->FindClass("emu/Swervito64/GalleryActivity");
     if (GalleryActivityClass != NULL)
     {
         m_GalleryActivityClass = (jclass)env->NewGlobalRef(GalleryActivityClass);
     }
-    jclass NotifierClass = env->FindClass("emu/project64/util/Notifier");
+    jclass NotifierClass = env->FindClass("emu/Swervito64/util/Notifier");
     if (NotifierClass != NULL)
     {
         m_NotifierClass = (jclass)env->NewGlobalRef(NotifierClass);

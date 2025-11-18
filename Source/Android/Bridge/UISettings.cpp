@@ -1,11 +1,11 @@
 #include "UISettings.h"
-#include <Project64-core/Settings.h>
-#include <Project64-core/Settings/SettingType/SettingsType-Application.h>
-#include <Project64-core/Settings/SettingType/SettingsType-ApplicationIndex.h>
-#include <Project64-core/Settings/SettingType/SettingsType-GameSetting.h>
-#include <Project64-core/Settings/SettingType/SettingsType-RelativePath.h>
-#include <Project64-core/Settings/SettingType/SettingsType-TempNumber.h>
-#include <Project64-core/Version.h>
+#include <Swervito64-core/Settings.h>
+#include <Swervito64-core/Settings/SettingType/SettingsType-Application.h>
+#include <Swervito64-core/Settings/SettingType/SettingsType-ApplicationIndex.h>
+#include <Swervito64-core/Settings/SettingType/SettingsType-GameSetting.h>
+#include <Swervito64-core/Settings/SettingType/SettingsType-RelativePath.h>
+#include <Swervito64-core/Settings/SettingType/SettingsType-TempNumber.h>
+#include <Swervito64-core/Version.h>
 
 void RegisterUISettings(void)
 {

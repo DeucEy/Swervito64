@@ -57,7 +57,7 @@
 
 // Help menu
 #180# "&Bantuan"
-#182# "&Tentang Project64"
+#182# "&Tentang Swervito64"
 #184# "&Situs Web"
 #185# "&Dukungan Proyek64"
 #186# "&Perselisihan"
@@ -221,7 +221,7 @@
 #464# "Nonaktifkan screensaver saat menjalankan ROM"
 #465# "Kecepatan tampilan"
 #466# "Tampilan kecepatan:"
-#467# "Periksa apakah Project64 sudah berjalan"
+#467# "Periksa apakah Swervito64 sudah berjalan"
 #468# "Simpan penyimpanan game di folder terpisah"
 #469# "Jalur ROM 64DD IPL Ritel Jepang:"
 #470# "Jalur ROM 64DD IPL ritel Amerika:"
@@ -443,7 +443,7 @@
 /*** Support window ***/
 
 #1200# "Dukungan Proyek64"
-#1201# "Project64 adalah emulator Nintendo 64 sumber terbuka dan gratis.\n\nProject64 memungkinkan Anda memainkan perangkat lunak N64 asli dengan cara yang sama seperti pada konsol asli.\n\nSaya mohon maaf atas ketidaknyamanan ini permintaan ini, tetapi Anda diminta untuk menunggu beberapa detik untuk menikmati hasil dari ratusan jam kerja.\n\nJika Anda dapat dan ingin mendukung Project64 atau Anda mendapatkan beberapa nilai darinya, silakan dukung Project64 sebagai ucapan terima kasih, atau keinginan Anda untuk menghapus perintah ini.\n\nJika Anda telah mendukung Project64:"
+#1201# "Swervito64 adalah emulator Nintendo 64 sumber terbuka dan gratis.\n\nSwervito64 memungkinkan Anda memainkan perangkat lunak N64 asli dengan cara yang sama seperti pada konsol asli.\n\nSaya mohon maaf atas ketidaknyamanan ini permintaan ini, tetapi Anda diminta untuk menunggu beberapa detik untuk menikmati hasil dari ratusan jam kerja.\n\nJika Anda dapat dan ingin mendukung Swervito64 atau Anda mendapatkan beberapa nilai darinya, silakan dukung Swervito64 sebagai ucapan terima kasih, atau keinginan Anda untuk menghapus perintah ini.\n\nJika Anda telah mendukung Swervito64:"
 #1202# "Masukkan/Minta Kode Dukungan"
 #1203# "Dukungan Proyek64"
 #1204# "Lanjutkan"
@@ -451,7 +451,7 @@
 #1206# "Gagal memvalidasi kode\n\nPastikan kode di email sesuai dengan perangkat Anda"
 #1207# "Terima kasih"
 #1208# "Silakan masukkan kode dukungan Anda"
-#1209# "Silakan masukkan kode yang Anda terima di email.\n\nEmail akan dikirim ke alamat email yang digunakan untuk mendukung Project64.\n\nHarap diperhatikan bahwa kode hanya akan berfungsi untuk perangkat unik. ID perangkat ini adalah:"
+#1209# "Silakan masukkan kode yang Anda terima di email.\n\nEmail akan dikirim ke alamat email yang digunakan untuk mendukung Swervito64.\n\nHarap diperhatikan bahwa kode hanya akan berfungsi untuk perangkat unik. ID perangkat ini adalah:"
 #1210# "Oke"
 #1211# "Batalkan"
 #1212# "Kode Permintaan"
@@ -492,7 +492,7 @@
 #2025# "Kesalahan"
 #2026# "Urutan hak cipta tidak ditemukan di LUT. Game tidak akan berfungsi lagi."
 #2027# "Kegagalan Perlindungan Salin"
-#2028# "Mengubah plugin memerlukan Project64 untuk mereset ROM yang sedang berjalan.\nJika Anda tidak ingin kehilangan tempat, jawab Tidak dan simpan status saat ini terlebih dahulu.\n\nUbah plugin dan setel ulang ROM sekarang?"
+#2028# "Mengubah plugin memerlukan Swervito64 untuk mereset ROM yang sedang berjalan.\nJika Anda tidak ingin kehilangan tempat, jawab Tidak dan simpan status saat ini terlebih dahulu.\n\nUbah plugin dan setel ulang ROM sekarang?"
 #2029# "Ubah Plugin"
 #2030# "Emulasi berakhir"
 #2031# "Emulasi dimulai"
@@ -515,7 +515,7 @@
 #2048# "Pintasan telah ditetapkan ke item menu lain."
 #2049# "Tidak ada jalan pintas yang dipilih untuk dihapus."
 #2050# "ROM dimuat. Menunggu emulasi dimulai."
-#2051# "Project64 versi beta hanya untuk anggota.\n\nJika Anda memiliki akun di www.pj64-emu.com, Anda seharusnya tidak melihat kesalahan ini!!\nSilakan hubungi kami di situs."
+#2051# "Swervito64 versi beta hanya untuk anggota.\n\nJika Anda memiliki akun di www.pj64-emu.com, Anda seharusnya tidak melihat kesalahan ini!!\nSilakan hubungi kami di situs."
 #2052# "Kesalahan Program"
 #2053# "Gagal menemukan nama file di file 7z"
 #2054# "Emulasi Tingkat Rendah Grafik"
@@ -547,11 +547,11 @@
 #3013# "Oke"
 #3014# "Batalkan"
 #3015# "Informasi"
-#3016# "Project64 untuk Android"
+#3016# "Swervito64 untuk Android"
 #3017# "Lisensi"
 #3018# "Revisi"
-#3019# "Project64 untuk Android\u2122 adalah port Project64 versi windows. Versi Android\u2122 dapat memainkan sebagian besar game N64."
-#3020# "Penulis Project64."
+#3019# "Swervito64 untuk Android\u2122 adalah port Swervito64 versi windows. Versi Android\u2122 dapat memainkan sebagian besar game N64."
+#3020# "Penulis Swervito64."
 #3021# "Perselisihan"
 
 // In-game menu

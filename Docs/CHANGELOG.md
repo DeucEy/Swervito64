@@ -23,7 +23,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Changed
 - Saves now have their own unique directory
 - Cheat system has been completely rebuilt
-- Project64 is now large address aware
+- Swervito64 is now large address aware
 - Default compiler is now Visual Studio 2015
 
 ### Fixes

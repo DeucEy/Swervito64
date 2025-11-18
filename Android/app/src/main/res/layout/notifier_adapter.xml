@@ -17,7 +17,7 @@
         android:paddingBottom = "20dp"
         />
     <Button
-        style="@style/Theme.Project64.Dialog.Button"
+        style="@style/Theme.Swervito64.Dialog.Button"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button"

@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Proper names, trademarks, etc. -->
-    <string name="app_name" translatable="false">Project64</string>
+    <string name="app_name" translatable="false">Swervito64</string>
     <string name="assetExtractor_uriHelp" translatable="false">www.pj64-emu.com</string>
     <!-- Strings only seen in the eclipse editor -->
     <string name="inputMapActivity_dummyFeedback" translatable="false">KEYCODE_XXXX</string>
@@ -17,7 +17,7 @@
 
     <!-- About -->
     <string name="about_link" translatable="false">        &lt;a href=&quot;www.pj64-emu.com&quot;&gt;www.pj64-emu.com&lt;/a&gt;</string>
-    <string name="about_copyright" translatable="false">Copyleft &#169; 1998&#8211;2016 by Project64.\n</string>
+    <string name="about_copyright" translatable="false">Copyleft &#169; 1998&#8211;2016 by Swervito64.\n</string>
     <string name="authors" translatable="false">Zilmar, Jabo, Smiff, Gent, Jahra!n, Witten, RadeonUser, Trotterwatch, pixi, Azimer, Gonetz, cxd4, AmbientMalice, LegendOfDragoon, Nekokabu, Lithium64, death-droid, LuigiBlood, dsx.</string>
 
     <!-- Seek Bar Preference -->

@@ -13,7 +13,7 @@ Disclaimer:
 What is it?
 	This plugin is for use with an N64 emulator that supports input plugins
 	through Zilmar's input spec.
-	Some emulators that support it are: Project64, Apollo, 1964, TR64 
+	Some emulators that support it are: Swervito64, Apollo, 1964, TR64 
 
 Main Features
 	Up to four N64 controllers supported
@@ -40,11 +40,11 @@ Installation:
 	Choose the plugin from within the emulator; again, consult the documentation
 		if you don't know how.
 	If you have a language .dll, place it in the same directory as your emulator
-		e.g. project64.exe
+		e.g. Swervito64.exe
 
 Thanks go out to
 	Azimer for his help with MemPaks
-	Zilmar & Jabo for their awesome Project64.
+	Zilmar & Jabo for their awesome Swervito64.
 	Smiff, Bodie, Cyber, Hotshitu, Gannonboy, Harlay, squall_leonhart, Poobah, Legend
 		for testing.
 	MadManMark for adding Transferpaks

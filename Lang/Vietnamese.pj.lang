@@ -57,9 +57,9 @@
 
 // Help menu
 # 180 # "& Trợ giúp"
-# 182 # "& Giới thiệu về Project64"
+# 182 # "& Giới thiệu về Swervito64"
 # 184 # "& Trang web"
-# 185 # "& Hỗ trợ Project64"
+# 185 # "& Hỗ trợ Swervito64"
 # 186 # "& Bất hòa"
 
 // Current save slot menu
@@ -221,7 +221,7 @@
 # 464 # "Tắt bảo vệ màn hình khi chạy ROM"
 # 465 # "Tốc độ hiển thị"
 # 466 # "Hiển thị tốc độ:"
-# 467 # "Kiểm tra xem Project64 đã chạy chưa"
+# 467 # "Kiểm tra xem Swervito64 đã chạy chưa"
 # 468 # "Trò chơi lưu trữ trong các thư mục riêng biệt"
 # 469 # "Đường dẫn ROM 64DD IPL bán lẻ của Nhật Bản:"
 # 470 # "Đường dẫn ROM 64DD IPL bán lẻ của Mỹ:"
@@ -442,16 +442,16 @@
 
 / *** Support window *** /
 
-# 1200 # "Hỗ trợ Project64"
-# 1201 # "Project64 là trình giả lập Nintendo 64 mã nguồn mở và miễn phí. \ N \ n Nó cho phép bạn chơi phần mềm N64 thực theo cách giống như trên bảng điều khiển gốc. \ N \ n Tôi xin lỗi về sự bất tiện của lời nhắc này, nhưng bạn đang được yêu cầu đợi vài giây để tận hưởng thành quả của hàng trăm giờ làm việc. \ n \ nNếu bạn có thể và muốn hỗ trợ Project64 hoặc bạn đã nhận được một số giá trị từ nó thì vui lòng hỗ trợ Project64 như một lời cảm ơn hoặc bạn muốn xóa lời nhắc này. \ n \ nNếu bạn đã hỗ trợ Project64: "
+# 1200 # "Hỗ trợ Swervito64"
+# 1201 # "Swervito64 là trình giả lập Nintendo 64 mã nguồn mở và miễn phí. \ N \ n Nó cho phép bạn chơi phần mềm N64 thực theo cách giống như trên bảng điều khiển gốc. \ N \ n Tôi xin lỗi về sự bất tiện của lời nhắc này, nhưng bạn đang được yêu cầu đợi vài giây để tận hưởng thành quả của hàng trăm giờ làm việc. \ n \ nNếu bạn có thể và muốn hỗ trợ Swervito64 hoặc bạn đã nhận được một số giá trị từ nó thì vui lòng hỗ trợ Swervito64 như một lời cảm ơn hoặc bạn muốn xóa lời nhắc này. \ n \ nNếu bạn đã hỗ trợ Swervito64: "
 # 1202 # "Nhập / Yêu cầu Mã Hỗ trợ"
-# 1203 # "Hỗ trợ Project64"
+# 1203 # "Hỗ trợ Swervito64"
 # 1204 # "Tiếp tục"
 # 1205 # "Vui lòng nhập mã hỗ trợ"
 # 1206 # "Không xác thực được mã \ n \ nĐảm bảo rằng mã trong email khớp với thiết bị của bạn"
 # 1207 # "Cảm ơn"
 # 1208 # "Vui lòng nhập mã hỗ trợ của bạn"
-# 1209 # "Vui lòng nhập mã bạn nhận được trong email. \ N \ nEmail sẽ được gửi đến địa chỉ email được sử dụng để hỗ trợ Project64. \ N \ nXin lưu ý rằng mã sẽ chỉ hoạt động cho một thiết bị duy nhất. ID của thiết bị này Là:"
+# 1209 # "Vui lòng nhập mã bạn nhận được trong email. \ N \ nEmail sẽ được gửi đến địa chỉ email được sử dụng để hỗ trợ Swervito64. \ N \ nXin lưu ý rằng mã sẽ chỉ hoạt động cho một thiết bị duy nhất. ID của thiết bị này Là:"
 # 1210 # "Được"
 # 1211 # "Hủy"
 # 1212 # "Mã Yêu cầu"
@@ -492,7 +492,7 @@
 # 2025 # "Lỗi"
 # 2026 # "Không tìm thấy chuỗi bản quyền trong LUT. Trò chơi sẽ không hoạt động nữa."
 # 2027 # "Lỗi Bảo vệ Sao chép"
-# 2028 # "Thay đổi plugin yêu cầu Project64 đặt lại ROM đang chạy. \ NNếu bạn không muốn mất vị trí của mình, hãy trả lời Không và lưu trạng thái hiện tại trước. \ N \ nThay đổi plugin và đặt lại ROM ngay bây giờ?"
+# 2028 # "Thay đổi plugin yêu cầu Swervito64 đặt lại ROM đang chạy. \ NNếu bạn không muốn mất vị trí của mình, hãy trả lời Không và lưu trạng thái hiện tại trước. \ N \ nThay đổi plugin và đặt lại ROM ngay bây giờ?"
 # 2029 # "Thay đổi Plugin"
 # 2030 # "Thi đua đã kết thúc"
 # 2031 # "Bắt đầu thi đua"
@@ -515,7 +515,7 @@
 # 2048 # "Cắt ngắn đã được chỉ định cho một mục menu khác."
 # 2049 # "Không có phím tắt nào được chọn để xóa."
 # 2050 # "Đã tải ROM. Đang chờ bắt đầu mô phỏng."
-# 2051 # "Phiên bản Project64 beta chỉ dành cho thành viên. \ N \ nNếu bạn có tài khoản tại www.pj64-emu.com, bạn sẽ không gặp lỗi này !! \ nVui lòng liên hệ với chúng tôi trên trang web."
+# 2051 # "Phiên bản Swervito64 beta chỉ dành cho thành viên. \ N \ nNếu bạn có tài khoản tại www.pj64-emu.com, bạn sẽ không gặp lỗi này !! \ nVui lòng liên hệ với chúng tôi trên trang web."
 # 2052 # "Lỗi Chương trình"
 # 2053 # "Không tìm thấy tên tệp trong tệp 7z"
 # 2054 # "Mô phỏng mức thấp đồ họa"
@@ -547,11 +547,11 @@
 # 3013 # "Được"
 # 3014 # "Hủy"
 # 3015 # "Thông tin"
-# 3016 # "Project64 dành cho Android"
+# 3016 # "Swervito64 dành cho Android"
 # 3017 # "Giấy phép"
 # 3018 # "Bản sửa đổi"
-# 3019 # "Project64 dành cho Android \ u2122 là một cổng của phiên bản Windows của Project64. Phiên bản Android \ u2122 có thể chơi hầu hết các trò chơi N64."
-# 3020 # "Tác giả Project64."
+# 3019 # "Swervito64 dành cho Android \ u2122 là một cổng của phiên bản Windows của Swervito64. Phiên bản Android \ u2122 có thể chơi hầu hết các trò chơi N64."
+# 3020 # "Tác giả Swervito64."
 # 3021 # "Bất hòa"
 
 // In-game menu

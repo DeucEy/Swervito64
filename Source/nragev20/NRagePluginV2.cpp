@@ -153,9 +153,9 @@ EXPORT void CALL GetDllInfo ( PLUGIN_INFO* PluginInfo )
 {
     DebugWriteA("CALLED: GetDllInfo\n");
 #ifdef _DEBUG
-    sprintf(PluginInfo->Name,"N-Rage For Project64 (debug): %s",VER_FILE_VERSION_STR);
+    sprintf(PluginInfo->Name,"N-Rage For Swervito64 (debug): %s",VER_FILE_VERSION_STR);
 #else
-    sprintf(PluginInfo->Name,"N-Rage For Project64: %s",VER_FILE_VERSION_STR);
+    sprintf(PluginInfo->Name,"N-Rage For Swervito64: %s",VER_FILE_VERSION_STR);
 #endif
     PluginInfo->Type = PLUGIN_TYPE_CONTROLLER;
     PluginInfo->Version = SPECS_VERSION;
@@ -804,7 +804,7 @@ Output:   None
 */
 
 EXPORT void CALL CloseDLL (void)
-{                                       // Hack: This is broken in Project64 1.6 (it calls CloseDLL too often)
+{                                       // Hack: This is broken in Swervito64 1.6 (it calls CloseDLL too often)
     DebugWriteA("CALLED: CloseDLL\n");
     if( g_bRunning )
         RomClosed();

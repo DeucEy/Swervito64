@@ -1,6 +1,6 @@
 # Introduction
 
-First of all, thank you for considering contributing to Project64! Project64 is an open-source project, and we love to receive contributions from the community. Contributions help fix bugs, add new features, and improve the project. There are many ways to contribute, from writing and improving the documentation, testing, submitting bug reports and feature requests, or writing code that can be incorporated into Project64 itself.
+First of all, thank you for considering contributing to Swervito64! Swervito64 is an open-source project, and we love to receive contributions from the community. Contributions help fix bugs, add new features, and improve the project. There are many ways to contribute, from writing and improving the documentation, testing, submitting bug reports and feature requests, or writing code that can be incorporated into Swervito64 itself.
 
 If you are looking for support or need help, please join the [Discord](https://discord.gg/Cg3zquF)! It's the best way to get your questions answered quickly. Please do not open a GitHub issue without first reading through the [support document](../Docs/SUPPORT.md).
 

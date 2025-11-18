@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/preferences">
 
-    <emu.project64.settings.ListPreference
+    <emu.Swervito64.settings.ListPreference
         app:entries="@array/cpu_core_list"
         app:entryValues="@array/cpu_core_values"
         android:key="Game_CpuType"

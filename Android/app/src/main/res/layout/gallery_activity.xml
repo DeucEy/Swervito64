@@ -22,7 +22,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/toolbar_height"
-            app:theme="@style/Theme.Project64.ToolBar">
+            app:theme="@style/Theme.Swervito64.ToolBar">
             <ImageView
                 android:id="@+id/toolbar_icon"
                 android:layout_width="32dp"
@@ -34,7 +34,7 @@
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
                 android:text="@string/app_name"
-                style="@style/Theme.Project64.ToolBar.TitleText"
+                style="@style/Theme.Swervito64.ToolBar.TitleText"
                 />
         </com.google.android.material.appbar.MaterialToolbar>
 
