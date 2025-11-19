@@ -59,7 +59,7 @@ goto :end
 :ProcessDirectoryFiles
 call set Files=%%ScanFiles[%1]%%
 For /R %Directory% %%A In (%Files%) Do (
-	::"%base_dir%\bin\clang-format-12.exe" -i -style=file "%%A"
+	::"%origdir%\clang-format-12.exe" -i -style=file "%%A"
 	CALL :ProcessFile "%%A"
 )
 goto :end
@@ -75,7 +75,7 @@ if defined Exclude[%ExcludeIndex%] (
 	set /a ExcludeIndex += 1
 	GOTO :ExcludeLoop 
 )
-"%base_dir%\bin\clang-format-12.exe" %ClangParm% %1
+"%origdir%\clang-format-12.exe" %ClangParm% %1
 IF %ERRORLEVEL% NEQ 0 set /a Result=1
 goto :end
 

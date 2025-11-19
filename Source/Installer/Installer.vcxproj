@@ -31,10 +31,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="Installer.iss">
-      <Command>"$(Root)bin\Inno Setup\ISCC.exe" /dConfiguration="$(Configuration)" "%(Filename).iss"</Command>
+      <Command>"$(Root)Source\Installer\Inno Setup\ISCC.exe" /dConfiguration="$(Configuration)" "%(Filename).iss"</Command>
       <AdditionalInputs>$(OutDir)Swervito64.exe;%(AdditionalInputs)</AdditionalInputs>
       <Outputs>$(OutDir)Setup Swervito64 2.2.exe;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(Root)bin\Inno Setup\ISCC.exe" /dConfiguration="$(Configuration)" /dPlatform="$(Platform)" "%(Filename).iss"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(Root)Source\Installer\Inno Setup\ISCC.exe" /dConfiguration="$(Configuration)" /dPlatform="$(Platform)" "%(Filename).iss"</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
