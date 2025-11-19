@@ -13,6 +13,10 @@
 #include <Swervito64-core/3rdParty/7zip.h>
 #endif
 
+#ifdef RETROACHIEVEMENTS
+#include "RetroAchievements.h"
+#endif // RETROACHIEVEMENTS
+
 CN64Rom::CN64Rom() :
     m_ROMImage(nullptr),
     m_ROMImageBase(nullptr),
@@ -129,6 +133,17 @@ bool CN64Rom::AllocateAndLoadN64Image(const char * FileLoc, bool LoadBootCodeOnl
     g_Notify->DisplayMessage(5, MSG_BYTESWAP);
     ByteSwapRom();
 
+#ifdef RETROACHIEVEMENTS
+    if (!LoadBootCodeOnly)
+    {
+        CalculateCicChip();
+        if (!IsLoadedRomDDIPL())
+        {
+            RA_IdentifyGame(FileLoc, m_ROMImage, m_RomFileSize);
+        }
+    }
+#endif // RETROACHIEVEMENTS
+
     // Protect the memory so that it can't be written to
     ProtectMemory(m_ROMImage, m_RomFileSize, MEM_READONLY);
     return true;
@@ -222,6 +237,10 @@ bool CN64Rom::AllocateAndLoadZipImage(const char * FileLoc, bool LoadBootCodeOnl
             g_Notify->DisplayMessage(5, MSG_BYTESWAP);
             ByteSwapRom();
 
+#ifdef RETROACHIEVEMENTS
+            RA_IdentifyGame(FileLoc, m_ROMImage, m_RomFileSize);
+#endif // RETROACHIEVEMENTS
+
             // Protect the memory so that it can't be written to
             ProtectMemory(m_ROMImage, m_RomFileSize, MEM_READONLY);
         }
@@ -280,7 +299,7 @@ CICChip CN64Rom::GetCicChipID(uint8_t * RomData, uint64_t * CRC)
 
     for (count = 0x40; count < 0x1000; count += 4)
     {
-        if (count == 0xC00) crcAleck64 = crc; //From 0x40 to 0xC00 (Aleck64)
+        if (count == 0xC00) crcAleck64 = crc; // From 0x40 to 0xC00 (Aleck64)
         crc += *(uint32_t *)(RomData + count);
     }
     if (CRC != nullptr)
@@ -306,7 +325,7 @@ CICChip CN64Rom::GetCicChipID(uint8_t * RomData, uint64_t * CRC)
     case 0x0000000AF3A34BC8: return CIC_MINI_IPL3;
     case 0x0000007c56242373: return CIC_NUS_6102; // LibDragon IPL3
     default:
-        //Aleck64 CIC
+        // Aleck64 CIC
         if (crcAleck64 == 0x000000A5F80BF620)
         {
             if (CRC != nullptr)
@@ -358,7 +377,7 @@ void CN64Rom::CalculateRomCrc()
 
     // CIC_NUS_5101 (Aleck64) at=0x6C078965 , s6=0xac
 
-    //v0 = 0xFFFFFFFF & (s6 * at) + 1;
+    // v0 = 0xFFFFFFFF & (s6 * at) + 1;
     switch (m_CicChip)
     {
     case CIC_NUS_6101:
@@ -581,11 +600,11 @@ bool CN64Rom::LoadN64Image(const char * FileLoc, bool LoadBootCodeOnly)
             *SubFile = '\0';
             SubFile += 1;
         }
-        //else load first found file until dialog is implemented
+        // else load first found file until dialog is implemented
         //{
-        // Pop up a dialog and select file
-        // Allocate memory for sub name and copy selected file name to variable
-        //}
+        //  Pop up a dialog and select file
+        //  Allocate memory for sub name and copy selected file name to variable
+        // }
 
         C7zip ZipFile(FullPath.c_str());
         ZipFile.SetNotificationCallback((C7zip::LP7ZNOTIFICATION)NotificationCB, this);
@@ -780,11 +799,11 @@ bool CN64Rom::LoadN64ImageIPL(const char * FileLoc, bool LoadBootCodeOnly)
             *SubFile = '\0';
             SubFile += 1;
         }
-        //else load first found file until dialog is implemented
+        // else load first found file until dialog is implemented
         //{
-        // Pop up a dialog and select file
-        // Allocate memory for sub name and copy selected file name to variable
-        //}
+        //  Pop up a dialog and select file
+        //  Allocate memory for sub name and copy selected file name to variable
+        // }
 
         C7zip ZipFile(FullPath.c_str());
         ZipFile.SetNotificationCallback((C7zip::LP7ZNOTIFICATION)NotificationCB, this);

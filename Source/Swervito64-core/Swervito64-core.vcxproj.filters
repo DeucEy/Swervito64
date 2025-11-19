@@ -432,6 +432,12 @@
     <ClCompile Include="N64System\Recompiler\RecompilerOps.cpp">
       <Filter>Source Files\N64 System\Recompiler</Filter>
     </ClCompile>
+    <ClCompile Include="RetroAchievements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\RAInterface\RA_Interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -814,6 +820,9 @@
     </ClInclude>
     <ClInclude Include="Settings\SettingType\SettingsType-RDB.h">
       <Filter>Header Files\Settings\SettingType</Filter>
+    </ClInclude>
+    <ClInclude Include="RetroAchievements.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

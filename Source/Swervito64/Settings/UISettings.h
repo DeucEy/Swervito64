@@ -19,6 +19,7 @@ enum UISettingID
     Setting_EnableDiscordRPC,
     Setting_AutoSleep,
     Setting_AutoFullscreen,
+    Setting_RetroAchievements,
 
     // RDB TLB settings
     Rdb_Status,

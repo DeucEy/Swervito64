@@ -215,6 +215,7 @@ void CLanguage::LoadDefaultStrings(void)
     DEF_STR(OPTION_SHOW_STATUS_BAR, "Show status bar");
     DEF_STR(OPTION_EXIT_FULLSCREEN_ON_LOSE_FOCUS, "Exit fullscreen on lose focus");
     DEF_STR(OPTION_DISCORD_RPC, "Enable Discord Rich Presence");
+    DEF_STR(OPTION_RETRO_ACHIEVEMENTS, "Enable RetroAchievements");
 
     // ROM browser tab
     DEF_STR(RB_MAX_ROMS, "Max # of ROMs remembered (0-10):");

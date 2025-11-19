@@ -166,7 +166,7 @@ private:
     void OnEndEmulation(void);
     void OnScreenShot(void);
     void OnSaveAs(HWND hWnd);
-    void OnLodState(HWND hWnd);
+    void OnLoadState(HWND hWnd);
     void OnEnhancements(HWND hWnd);
     void OnCheats(HWND hWnd);
     void OnSettings(HWND hWnd);

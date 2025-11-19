@@ -4,6 +4,10 @@
 
 #include <Common/Util.h>
 
+#ifdef RETROACHIEVEMENTS
+#include "../RAInterface/RA_Interface.h"
+#endif // RETROACHIEVEMENTS
+
 const uint32_t CSpeedLimiter::m_DefaultSpeed = 60;
 
 CSpeedLimiter::CSpeedLimiter() :
@@ -91,6 +95,13 @@ void CSpeedLimiter::AlterSpeed(const ESpeedChange SpeedChange)
         m_Speed += 1 * SpeedFactor;
     }
 
+#ifdef RETROACHIEVEMENTS
+    if (m_Speed < m_DefaultSpeed && RA_HardcoreModeIsActive())
+    {
+        m_Speed = m_DefaultSpeed;
+    }
+#endif // RETROACHIEVEMENTS
+
     SpeedChanged(m_Speed);
     FixSpeedRatio();
 }
@@ -101,6 +112,14 @@ void CSpeedLimiter::SetSpeed(int Speed)
     {
         Speed = 1;
     }
+
+#ifdef RETROACHIEVEMENTS
+    if (Speed < m_DefaultSpeed && RA_HardcoreModeIsActive())
+    {
+        Speed = m_DefaultSpeed;
+    }
+#endif // RETROACHIEVEMENTS
+
     m_Speed = Speed;
     SpeedChanged(m_Speed);
     FixSpeedRatio();

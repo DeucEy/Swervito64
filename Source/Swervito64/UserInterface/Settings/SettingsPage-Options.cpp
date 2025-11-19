@@ -15,7 +15,7 @@ CGeneralOptionsPage::CGeneralOptionsPage(CSettingConfig * SettingsConfig, HWND h
     SetDlgItemText(IDC_LOAD_FULLSCREEN, wGS(OPTION_AUTO_FULLSCREEN).c_str());
     SetDlgItemText(IDC_SCREEN_SAVER, wGS(OPTION_DISABLE_SS).c_str());
     SetDlgItemText(IDC_DISCORD_RPC, wGS(OPTION_DISCORD_RPC).c_str());
-    SetDlgItemText(IDC_BASIC_MODE, wGS(OPTION_BASIC_MODE).c_str());
+    SetDlgItemText(IDC_RETRO_ACHIEVEMENTS, wGS(OPTION_RETRO_ACHIEVEMENTS).c_str());
     SetDlgItemText(IDC_MAXROMS_TXT, wGS(RB_MAX_ROMS).c_str());
     SetDlgItemText(IDC_ROMSEL_TEXT2, wGS(RB_ROMS).c_str());
     SetDlgItemText(IDC_MAXROMDIR_TXT, wGS(RB_MAX_DIRS).c_str());
@@ -25,7 +25,7 @@ CGeneralOptionsPage::CGeneralOptionsPage(CSettingConfig * SettingsConfig, HWND h
     AddModCheckBox(GetDlgItem(IDC_LOAD_FULLSCREEN), (SettingID)Setting_AutoFullscreen);
     AddModCheckBox(GetDlgItem(IDC_SCREEN_SAVER), (SettingID)Setting_DisableScrSaver);
     AddModCheckBox(GetDlgItem(IDC_DISCORD_RPC), (SettingID)Setting_EnableDiscordRPC);
-    AddModCheckBox(GetDlgItem(IDC_BASIC_MODE), UserInterface_BasicMode);
+    AddModCheckBox(GetDlgItem(IDC_RETRO_ACHIEVEMENTS), (SettingID)Setting_RetroAchievements);
 
     CModifiedEditBox * TxtBox = AddModTextBox(GetDlgItem(IDC_REMEMBER), (SettingID)File_RecentGameFileCount, false);
     TxtBox->SetTextField(GetDlgItem(IDC_MAXROMS_TXT));
@@ -63,11 +63,9 @@ bool CGeneralOptionsPage::EnableReset(void)
 void CGeneralOptionsPage::ResetPage()
 {
     CSettingsPageImpl<CGeneralOptionsPage>::ResetPage();
-    m_SettingsConfig->UpdateAdvanced((int)::SendMessage(GetDlgItem(IDC_BASIC_MODE), BM_GETCHECK, 0, 0) == 0);
+    m_SettingsConfig->UpdateAdvanced(true);
 }
 
 void CGeneralOptionsPage::OnBasicMode(UINT Code, int id, HWND ctl)
 {
-    CheckBoxChanged(Code, id, ctl);
-    m_SettingsConfig->UpdateAdvanced((int)::SendMessage(ctl, BM_GETCHECK, 0, 0) == 0);
 }

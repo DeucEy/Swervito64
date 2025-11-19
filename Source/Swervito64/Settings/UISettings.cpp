@@ -29,6 +29,7 @@ void RegisterUISettings(void)
     AddUISetting(Setting_EnableDiscordRPC, new CSettingTypeApplication("Settings", "Enable Discord RPC", true));
     AddUISetting(Setting_AutoSleep, new CSettingTypeApplication("Settings", "Auto Sleep", (uint32_t) true));
     AddUISetting(Setting_AutoFullscreen, new CSettingTypeApplication("Settings", "Auto Full Screen", (uint32_t) false));
+    AddUISetting(Setting_RetroAchievements, new CSettingTypeApplication("Settings", "Enable RetroAchievements", (uint32_t)false));
 
     // RDB settings
     AddUISetting(Rdb_Status, new CSettingTypeRomDatabase("Status", "Unknown"));

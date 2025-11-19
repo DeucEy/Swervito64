@@ -40,9 +40,14 @@
     </Lib>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SolutionDir)Source\3rdParty\SoftFloat-3e\source\include;$(SolutionDir)Source\3rdParty\asmjit\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RETROACHIEVEMENTS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RETROACHIEVEMENTS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RETROACHIEVEMENTS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RETROACHIEVEMENTS;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\RAInterface\RA_Interface.cpp" />
     <ClCompile Include="3rdParty\7zip.cpp">
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -121,6 +126,7 @@
     <ClCompile Include="Plugins\Plugin.cpp" />
     <ClCompile Include="Plugins\PluginBase.cpp" />
     <ClCompile Include="Plugins\RSPPlugin.cpp" />
+    <ClCompile Include="RetroAchievements.cpp" />
     <ClCompile Include="RomList\RomList.cpp" />
     <ClCompile Include="Settings.cpp" />
     <ClCompile Include="Settings\DebugSettings.cpp" />
@@ -248,6 +254,7 @@
     <ClInclude Include="Plugins\Plugin.h" />
     <ClInclude Include="Plugins\PluginBase.h" />
     <ClInclude Include="Plugins\RSPPlugin.h" />
+    <ClInclude Include="RetroAchievements.h" />
     <ClInclude Include="RomList\RomList.h" />
     <ClInclude Include="Settings.h" />
     <ClInclude Include="Settings\DebugSettings.h" />

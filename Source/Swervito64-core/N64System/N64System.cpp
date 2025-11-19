@@ -19,6 +19,11 @@
 #include <utime.h>
 #endif
 
+#ifdef RETROACHIEVEMENTS
+#include <../RAInterface/RA_Interface.h>
+#include <RetroAchievements.h>
+#endif // RETROACHIEVEMENTS
+
 #pragma warning(disable : 4355) // Disable 'this' : used in base member initializer list
 
 CN64System::CN64System(CPlugins * Plugins, uint32_t randomizer_seed, bool SavesReadOnly, bool SyncSystem) :
@@ -29,7 +34,7 @@ CN64System::CN64System(CPlugins * Plugins, uint32_t randomizer_seed, bool SavesR
     m_SyncPlugins(nullptr),
     m_SystemEvents(*this, Plugins),
     m_MMU_VM(*this, SavesReadOnly),
-    //m_Cheats(m_MMU_VM),
+    // m_Cheats(m_MMU_VM),
     m_Reg(*this, m_SystemEvents),
     m_TLB(m_MMU_VM, m_Reg, m_Recomp),
     m_OpCodes(*this, !SyncSystem && g_Settings->LoadDword(Game_CpuType) != CPU_Interpreter && b32BitCore()),
@@ -428,7 +433,7 @@ bool CN64System::LoadFileImageIPL(const char * FileLoc)
 
     // Mark the N64DD IPL as loading
     WriteTrace(TraceN64System, TraceDebug, "Mark N64DD IPL as loading");
-    //g_Settings->SaveString(Game_File, "");
+    // g_Settings->SaveString(Game_File, "");
     g_Settings->SaveBool(GameRunning_LoadingInProgress, true);
 
     // Try to load the passed N64DD IPL
@@ -465,7 +470,7 @@ bool CN64System::LoadFileImageIPL(const char * FileLoc)
         else if (g_DDRom->CicChipID() == CIC_NUS_8401)
             g_Settings->SaveString(File_DiskIPLTOOLPath, FileLoc);
 
-        //g_Settings->SaveString(Game_File, FileLoc);
+        // g_Settings->SaveString(Game_File, FileLoc);
         g_Settings->SaveBool(GameRunning_LoadingInProgress, false);
     }
     else
@@ -490,7 +495,7 @@ bool CN64System::LoadDiskImage(const char * FileLoc, const bool Expansion)
 
     // Mark the disk as loading
     WriteTrace(TraceN64System, TraceDebug, "Mark disk as loading");
-    //g_Settings->SaveString(Game_File, "");
+    // g_Settings->SaveString(Game_File, "");
     g_Settings->SaveBool(GameRunning_LoadingInProgress, true);
 
     // Try to load the passed N64 disk
@@ -622,6 +627,11 @@ void CN64System::RunLoadedImage(void)
     {
         WriteTrace(TraceN64System, TraceError, "Failed to create CN64System");
     }
+
+#ifdef RETROACHIEVEMENTS
+    RA_UpdateMemoryBanks();
+#endif // RETROACHIEVEMENTS
+
     WriteTrace(TraceN64System, TraceDebug, "Done");
 }
 
@@ -697,7 +707,7 @@ bool CN64System::SelectAndLoadFileImageIPL(Country country, bool combo)
         {
             if (!g_Rom->IsLoadedRomDDIPL())
             {
-                //g_Notify->DisplayError(MSG_FAIL_IMAGE_IPL);
+                // g_Notify->DisplayError(MSG_FAIL_IMAGE_IPL);
                 g_Notify->DisplayWarning(IPLROMError);
                 g_Settings->SaveString(IPLROMPathSetting, "");
                 return false;
@@ -727,7 +737,7 @@ bool CN64System::EmulationStarting(CThread * thread)
             if (g_Disk != nullptr)
             {
                 g_Disk->SaveDiskImage();
-                //g_Notify->DisplayError(g_Disk->GetError());
+                // g_Notify->DisplayError(g_Disk->GetError());
                 WriteTrace(TraceN64System, TraceDebug, "64DD Save Done");
             }
         }
@@ -823,7 +833,7 @@ void CN64System::Pause()
     }
     m_hPauseEvent.IsTriggered(SyncEvent::INFINITE_TIMEOUT);
     m_hPauseEvent.Reset();
-    g_Settings->SaveBool(GameRunning_CPU_Paused, (uint32_t) false);
+    g_Settings->SaveBool(GameRunning_CPU_Paused, (uint32_t)false);
     if (pause_type == PauseType_FromMenu)
     {
         g_Notify->DisplayMessage(2, MSG_CPU_RESUMED);
@@ -1066,7 +1076,15 @@ void CN64System::CpuStopped()
     WriteTrace(TraceN64System, TraceDebug, "Start");
     if (!m_InReset)
     {
-        g_Settings->SaveBool(GameRunning_CPU_Running, (uint32_t) false);
+#ifdef RETROACHIEVEMENTS
+        if (RA_IsOverlayFullyVisible)
+        {
+            RA_SetPaused(false);
+        }
+        RA_ActivateGame(0);
+#endif // RETROACHIEVEMENTS
+
+        g_Settings->SaveBool(GameRunning_CPU_Running, (uint32_t)false);
         g_Notify->DisplayMessage(5, MSG_EMULATION_ENDED);
     }
     if (m_SyncCPU)
@@ -1777,6 +1795,10 @@ bool CN64System::SaveState()
     {
         SaveFile = ZipFile;
     }
+#ifdef RETROACHIEVEMENTS
+    RA_OnSaveState(SaveFile);
+#endif // RETROACHIEVEMENTS
+
     g_Notify->DisplayMessage(3, stdstr_f("%s %s", g_Lang->GetString(MSG_SAVED_STATE).c_str(), stdstr(SaveFile.GetNameExtension()).c_str()).c_str());
     WriteTrace(TraceN64System, TraceDebug, "Done");
     return true;
@@ -2169,6 +2191,10 @@ bool CN64System::LoadState(const char * FileName)
         }
     }
 
+#ifdef RETROACHIEVEMENTS
+    RA_OnLoadState(SaveFile);
+#endif // RETROACHIEVEMENTS
+
     // Fix losing audio in certain games with certain plugins
     AudioResetOnLoad = g_Settings->LoadBool(Game_AudioResetOnLoad);
     if (AudioResetOnLoad)
@@ -2391,6 +2417,10 @@ void CN64System::RefreshScreen()
         m_FPS.Reset(true);
         m_bCleanFrameBox = false;
     }
+
+#ifdef RETROACHIEVEMENTS
+    RA_DoAchievementsFrame();
+#endif // RETROACHIEVEMENTS
 
     if (bShowCPUPer())
     {

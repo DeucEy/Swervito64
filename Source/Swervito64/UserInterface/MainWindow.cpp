@@ -9,6 +9,11 @@
 #include <Swervito64\UserInterface\About.h>
 #include <commctrl.h>
 
+#ifdef RETROACHIEVEMENTS
+#include <../RAInterface/RA_Interface.h>
+#include <Swervito64-core/RetroAchievements.h>
+#endif // RETROACHIEVEMENTS
+
 void EnterLogOptions(HWND hwndOwner);
 
 #pragma comment(lib, "Comctl32.lib")
@@ -157,12 +162,25 @@ void CMainGui::AddRecentRom(const char * ImagePath)
 
 void CMainGui::SetWindowCaption(const wchar_t * title)
 {
-    static const size_t TITLE_SIZE = 256;
-    wchar_t WinTitle[TITLE_SIZE];
+#ifdef RETROACHIEVEMENTS
+    if (g_Settings->LoadBool((SettingID)Setting_RetroAchievements))
+    {
+        stdstr str;
+        str.FromUTF16(title);
+        CGuard Guard(m_CS);
+        RA_UpdateAppTitle(str.c_str());
+    }
+    else
+#endif // RETROACHIEVEMENTS
+    {
 
-    _snwprintf(WinTitle, TITLE_SIZE, L"%s - %s", title, stdstr(g_Settings->LoadStringVal(Setting_ApplicationName)).ToUTF16().c_str());
-    WinTitle[TITLE_SIZE - 1] = 0;
-    Caption(WinTitle);
+        static const size_t TITLE_SIZE = 256;
+        wchar_t WinTitle[TITLE_SIZE];
+
+        _snwprintf(WinTitle, TITLE_SIZE, L"%s - %s", title, stdstr(g_Settings->LoadStringVal(Setting_ApplicationName)).ToUTF16().c_str());
+        WinTitle[TITLE_SIZE - 1] = 0;
+        Caption(WinTitle);
+    }
 }
 
 void CMainGui::ShowRomBrowser(void)
@@ -420,12 +438,35 @@ WPARAM CMainGui::ProcessAllMessages(void)
         {
             continue;
         }
-        if (m_Menu->ProcessAccelerator(m_hMainWindow, &msg))
+#ifdef RETROACHIEVEMENTS
+        if (GetForegroundWindow() == m_hMainWindow) // Prevent calling ProcessAccelerator if an RA window has focus
         {
-            continue;
+#endif // RETROACHIEVEMENTS
+            if (m_Menu->ProcessAccelerator(m_hMainWindow, &msg))
+            {
+                continue;
+            }
+#ifdef RETROACHIEVEMENTS
         }
+#endif // RETROACHIEVEMENTS
+
         TranslateMessage(&msg);
         DispatchMessage(&msg);
+
+#ifdef RETROACHIEVEMENTS
+        if (RA_IsOverlayFullyVisible())
+        {
+            // have to use PeekMessage loop to pass controller inputs to DLL
+            // only do so when the overlay is fully visibile
+            do
+            {
+                RA_ProcessInputs();
+                if (!PeekMessage(&msg, nullptr, 0, 0, PM_NOREMOVE))
+                    break;
+                Sleep(10); // 60fps = 16ms/frame
+            } while (1);
+        }
+#endif // RETROACHIEVEMENTS
     }
     return msg.wParam;
 }
@@ -870,7 +911,7 @@ LRESULT CALLBACK CMainGui::MainGui_Proc(HWND hWnd, DWORD uMsg, WPARAM wParam, LP
                 Notify().WindowMode();
                 if (bAutoSleep() && g_BaseSystem)
                 {
-                    //System->ExternalEvent(PauseCPU_AppLostActiveDelayed );
+                    // System->ExternalEvent(PauseCPU_AppLostActiveDelayed );
                 }
                 break;
             }
@@ -1158,6 +1199,10 @@ LRESULT CALLBACK CMainGui::MainGui_Proc(HWND hWnd, DWORD uMsg, WPARAM wParam, LP
                         }
                     }
                 }
+                else if (LOWORD(wParam) >= IDM_RA_MENUSTART && LOWORD(wParam) < IDM_RA_MENUEND)
+                {
+                    RA_InvokeDialog(LOWORD(wParam));
+                }
                 else if (_this->m_Menu->ProcessMessage(hWnd, HIWORD(wParam), LOWORD(wParam)))
                 {
                     return true;
@@ -1185,6 +1230,14 @@ LRESULT CALLBACK CMainGui::MainGui_Proc(HWND hWnd, DWORD uMsg, WPARAM wParam, LP
         }
     }
     break;
+#ifdef RETROACHIEVEMENTS
+    case WM_CLOSE:
+        if (!RA_ConfirmLoadNewRom(true))
+        {
+            return 0;
+        }
+        return DefWindowProc(hWnd, uMsg, wParam, lParam);
+#endif // RETROACHIEVEMENTS
     case WM_DESTROY:
         WriteTrace(TraceUserInterface, TraceDebug, "WM_DESTROY - start");
         {

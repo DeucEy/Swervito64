@@ -35,7 +35,7 @@
 #define IDD_Settings_General            144
 #define IDD_Settings_Accelerator        145
 #define IDD_Settings_Config             149
-#define IDD_Support_Swervito64           150
+#define IDD_Support_Swervito64          150
 #define IDD_Support_EnterCode           151
 #define IDD_Debugger_Commands           152
 #define IDR_POPUP                       155
@@ -860,6 +860,7 @@
 #define IDC_MEMORY_SIZE_UNKOWN_TEXT     1739
 #define IDC_MEMORY_SIZE_KNOWN_TEXT      1740
 #define IDC_COUNT_EDIT                  1741
+#define IDC_RETRO_ACHIEVEMENTS          1741
 #define ID_POPUPMENU_PLAYGAMEWITHDISK   40008
 #define ID_POPUPMENU_ADDSYMBOL          40013
 #define ID_POPUPMENU_VIEWDISASM         40017
@@ -870,7 +871,6 @@
 #define ID_POPUP_RUN                    40024
 #define ID_POPUP_STOP                   40025
 #define ID_POPUPMENU_INSERTNOP          40026
-#define ID_POPUPMENU_COPY_COMMANDS      40200
 #define ID_POPUPMENU_RESTORE            40027
 #define ID_POPUPMENU_RESTOREALL         40029
 #define ID_POPUPMENU_EDIT               40030
@@ -928,6 +928,7 @@
 #define ID_POPUP_EDIT                   40162
 #define ID_POPUP_DELETE                 40163
 #define ID_POPUP_ADDENHANCEMENT         40164
+#define ID_POPUPMENU_COPY_COMMANDS      40200
 
 // Next default values for new objects
 // 
@@ -935,7 +936,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        228
 #define _APS_NEXT_COMMAND_VALUE         40122
-#define _APS_NEXT_CONTROL_VALUE         1741
+#define _APS_NEXT_CONTROL_VALUE         1742
 #define _APS_NEXT_SYMED_VALUE           102
 #endif
 #endif

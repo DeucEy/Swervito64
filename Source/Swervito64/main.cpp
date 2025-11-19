@@ -4,6 +4,10 @@
 #include "UserInterface/WelcomeScreen.h"
 #include <Swervito64-core/AppInit.h>
 
+#ifdef RETROACHIEVEMENTS
+#include <Swervito64-core/RetroAchievements.h>
+#endif // RETROACHIEVEMENTS
+
 int WINAPI WinMain(HINSTANCE /*hInstance*/, HINSTANCE /*hPrevInstance*/, LPSTR /*lpszArgs*/, int /*nWinMode*/)
 {
     try
@@ -71,7 +75,6 @@ int WINAPI WinMain(HINSTANCE /*hInstance*/, HINSTANCE /*hPrevInstance*/, LPSTR /
 
         if (!isROMLoaded)
         {
-            CSupportWindow(MainWindow.Support()).Show((HWND)MainWindow.GetWindowHandle(), true);
             if (UISettingsLoadBool(RomBrowser_Enabled))
             {
                 WriteTrace(TraceUserInterface, TraceDebug, "Show ROM browser");
@@ -86,9 +89,20 @@ int WINAPI WinMain(HINSTANCE /*hInstance*/, HINSTANCE /*hPrevInstance*/, LPSTR /
             }
         }
 
+#ifdef RETROACHIEVEMENTS
+        if (g_Settings->LoadBool((SettingID)Setting_RetroAchievements))
+        {
+            RA_Init(reinterpret_cast<HWND>(MainWindow.GetWindowHandle()));
+        }
+#endif // RETROACHIEVEMENTS
+
         WriteTrace(TraceUserInterface, TraceDebug, "Entering message loop");
         MainWindow.ProcessAllMessages();
         WriteTrace(TraceUserInterface, TraceDebug, "Message loop finished");
+
+#ifdef RETROACHIEVEMENTS
+        RA_Shutdown();
+#endif // RETROACHIEVEMENTS
 
         if (g_BaseSystem)
         {

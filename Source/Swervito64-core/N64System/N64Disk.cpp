@@ -8,6 +8,10 @@
 #include <Swervito64-core/N64System/Mips/Register.h>
 #include <memory>
 
+#ifdef RETROACHIEVEMENTS
+#include "RetroAchievements.h"
+#endif // RETROACHIEVEMENTS
+
 CN64Disk::CN64Disk() :
     m_DiskImage(nullptr),
     m_DiskImageBase(nullptr),
@@ -216,7 +220,7 @@ void CN64Disk::SaveDiskSettingID(bool temp)
     g_Settings->SaveBool(Game_TempLoaded, temp);
     g_Settings->SaveString(Game_GameName, m_RomName.c_str());
     g_Settings->SaveString(Game_IniKey, m_DiskIdent.c_str());
-    //g_Settings->SaveString(Game_UniqueSaveDir, stdstr_f("%s-%s", m_RomName.c_str(), m_MD5.c_str()).c_str());
+    // g_Settings->SaveString(Game_UniqueSaveDir, stdstr_f("%s-%s", m_RomName.c_str(), m_MD5.c_str()).c_str());
 
     switch (GetCountry())
     {
@@ -376,6 +380,10 @@ bool CN64Disk::AllocateAndLoadDiskImage(const char * FileLoc)
         }
 
         DetectSystemArea();
+
+#ifdef RETROACHIEVEMENTS
+        RA_IdentifyGame(FileLoc, m_DiskImage, m_DiskFileSize);
+#endif // RETROACHIEVEMENTS
 
         g_Notify->DisplayMessage(5, MSG_BYTESWAP);
         ByteSwapDisk();
@@ -770,7 +778,7 @@ void CN64Disk::DetectSystemArea()
             }
         }
     }
-    else //if (m_DiskFormat == DiskFormatD64)
+    else // if (m_DiskFormat == DiskFormatD64)
     {
         // D64 (uses fixed addresses)
         m_DiskSysAddress = 0x000;
@@ -891,7 +899,7 @@ void CN64Disk::DetectRamAddress()
     {
         m_DiskRamAddress = LBAToByte(0, RAM_START_LBA[m_DiskType]);
     }
-    else //if (m_DiskFormat == DiskFormatD64)
+    else // if (m_DiskFormat == DiskFormatD64)
     {
         m_DiskRamAddress = m_DiskRomAddress + LBAToByte(SYSTEM_LBAS, *(uint16_t *)(&GetDiskAddressSys()[0xE0 ^ 2]) + 1);
     }
